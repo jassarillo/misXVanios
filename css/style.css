@@ -333,7 +333,17 @@ button {
 
 .banner_4 {
      position: relative;
-     background: url(../images/06_1200x800.jpg);
+     background: url(../images/itinerario.jpg);
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 804px;
+     padding-top: 80%;
+}
+
+.banner_5 {
+     position: relative;
+     background: url(../images/banner5.jpg);
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
@@ -498,8 +508,13 @@ button {
 
 /** about section **/
 
+.about_misXV {
+     background-color: #fff;
+     padding-top: 95px;
+}
+
 .about {
-     background-color: #ea0606;
+     background-color: #fff;
      padding-top: 95px;
 }
 
