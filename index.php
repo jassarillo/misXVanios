@@ -111,8 +111,7 @@
                      <div class="carousel-caption relative">
                         <div class="row">
                            <div class="col-md-1 offset-md-2">
-                              <a href="https://www.google.com/maps/search/?api=1&query=19.10711285128303,-98.27150480793455&zoom=20
-                              " target="_blank">link</a>                                
+                              <a href="https://goo.gl/maps/geoVdnfKQj8HjDXa8" target="_blank">link</a>                                
                                  <div class="div-count" id="cuenta"></div>
                            </div>
                         </div>
@@ -145,22 +144,24 @@
       <!-- end Banner 2 -->
 
       <!-- about -->
-      <div id="about" class="about_misXV">
+      <div id="about" class="mi_vida_misXV">
          <div class="container">
                      <div class="row">
-                           <div class="col-md-12" >
-                              <div class="text-bg-mi-vida">
-                                 <h1> MI VIDA EN XV AÑOS </h1>
+                           <p>
+                          
+                                 <figure><img src="images/header_mi_vida_xv.jpg" alt="#" width="1200px" height="30px" />
+                                 </figure>
                                  
-                              </div>
-                           </div>
+                              
+                           </p>
 
                         </div>
                         <div class="row row_align">
-                           <div class="col-md-8">
-                              <figure>
-                                 <iframe  src="https://www.youtube.com/embed/5QNXO5MGBEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                              </figure>
+                           <div class="col-md-12">
+                              
+                                 <iframe  src="https://www.youtube.com/embed/5QNXO5MGBEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%">
+                                 </iframe>
+                              
                            </div>
                         </div>
                      
@@ -178,10 +179,22 @@
                  <div class="about_img">
                      <figure><img src="images/lugares_1.jpg" alt="#"/></figure>
                   </div>
+                  <div class="row">
+                     <div class="col-md-3"></div>
+                     <div class="col-md-5" align="center">
+                        <a class="read_more" href="https://goo.gl/maps/geoVdnfKQj8HjDXa8"> Ver en mapa</a>
+                     </div>
+                  </div>
                </div>
                <div class="col-md-6">
                   <div class="about_img">
                      <figure><img src="images/lugares_2.jpg" alt="#"/></figure>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-3"></div>
+                     <div class="col-md-5" align="center">
+                        <a class="read_more" href="https://goo.gl/maps/7Uu5zEbczfuAJQaH8"> Ver en mapa</a>
+                     </div>
                   </div>
                </div>
             </div>
@@ -221,103 +234,6 @@
       </section>
       <!-- end Itinerario -->
       
-
-      <!-- latest news
-      <div  class="latest_news">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Read Our <span class="green">Latest News</span></h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-
-               <div class="card-deck">
-                 <div class="card">
-                   <img class="card-img-top" src="images/iglesia.jpg" alt="Card image cap">
-                   <div class="card-body card-bg-body text-bg-card">
-                     <h5 class="card-title text-bg-title1 row_align">Ceremonia Religiosa</h5>
-                     <h5 class="card-title text-bg-title2 row_align">5:00 PM</h5>
-                     <p class="card-text"><b>Iglesia nuestra Sra de Loreto</b></p>
-                     <p class="card-text">Plaza Hidalgo</p>
-                   </div>
-                 </div>
-                 
-                 <div class="card">
-                   <img class="card-img-top" src="images/salon.jpg" alt="Card image cap">
-                   <div class="card-body card-bg-body text-bg-card">
-
-                     <h5 class="card-title text-bg-title1 row_align">Recepción</h5>
-                     <h4 class="card-title text-bg-title2 row_align">06:30 PM</h4>
-                     <p class="card-text row_align"><b>Salón María Alondra</b></p>
-                     <p class="card-text row_align">Septima Avenida Cerrada. Avenida Paraje Xacopinca. Tultepec</p>
-                     <div class="row">
-                        <div class="col-md-12">
-                        <a class="read_more" href="Javascript:void(0)"> Read More</a>
-                        </div>
-                     </div>
-                   </div>
-                   
-                 </div>
-
-               </div>
-            </div>
-         </div>
-      </div>
-    end latest news -->
-
-      <!--  service -->
-      <!--<div id="service" class="service">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Our <span class="green">Services</span></h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <div class="row">
-                     <div class="col-md-4 col-sm-6">
-                        <div class="service_box">
-                           <i><img src="images/service1.png" alt="#"/></i>
-                           <h3>Retina Ready</h3>
-                           <p>many variations of passages <br>of Lorem Ipsum available,</p>
-                        </div>
-                     </div>
-                     <div class="col-md-4 offset-md-1 col-sm-6">
-                        <div class="service_box">
-                           <i><img src="images/service2.png" alt="#"/></i>
-                           <h3>Creative Elements</h3>
-                           <p>many variations of passages <br>of Lorem Ipsum available,</p>
-                        </div>
-                     </div>
-                     <div class="col-md-4 offset-md-3 col-sm-6 mar_top">
-                        <div class="service_box">
-                           <i><img src="images/service3.png" alt="#"/></i>
-                           <h3>Easy-to-Use</h3>
-                           <p>many variations of passages <br>of Lorem Ipsum available,</p>
-                        </div>
-                     </div>
-                     <div class="col-md-4 offset-md-1 col-sm-6 mar_top">
-                        <div class="service_box">
-                           <i><img src="images/service4.png" alt="#"/></i>
-                           <h3>Easy Import</h3>
-                           <p>many variations of passages <br>of Lorem Ipsum available,</p>
-                        </div>
-                     </div>
-                     <div class="col-md-12">
-                        <a class="read_more" href="Javascript:void(0)"> Read More</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>-->
-      <!-- end service -->
       <!-- gallery -->
       <div id="gallery"  class="gallery">
          <div class="container">
@@ -381,7 +297,7 @@
       <!-- end gallery -->
 
       
-      <!-- Banner 4 -->
+      <!-- Banner 5 -->
       <section class="banner_main">
          <div id="myCarousel" class="carousel slide banner_5" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -410,7 +326,7 @@
             
          </div>
       </section>
-      <!-- end banner 4 -->
+      <!-- end banner 5 -->
 
 
 

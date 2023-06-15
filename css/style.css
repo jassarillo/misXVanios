@@ -351,6 +351,8 @@ button {
      padding-top: 80%;
 }
 
+
+
 .text-bg {
      text-align: left;
 }
@@ -398,7 +400,7 @@ button {
      max-width: 243px;
      height: 66px;
      padding: 17px 0;
-     background-color: #fff;
+     background-color: #B8040E;
      color: #000;
      text-transform: uppercase;
      font-weight: bold;
@@ -406,7 +408,7 @@ button {
 }
 
 .text-bg .read_more:hover {
-     background-color: #0d0c0c;
+     background-color: #B8030E;
 }
 
 .banner .carousel-indicators {
@@ -488,19 +490,19 @@ button {
 
 .read_more {
      font-size: 17px;
-     background-color: #252525;
+     background-color: #B8030E;
      color: #fff;
      padding: 12px 0px;
      width: 100%;
      max-width: 210px;
      text-align: center;
      display: inline-block;
-     transition: ease-in all 0.5s;
+     transition: #fff;
      font-weight: 400;
 }
 
 .read_more:hover {
-     background: #16e816;
+     background: #FF0223;
      color: #fff;
      transition: ease-in all 0.5s;
 }
@@ -512,7 +514,10 @@ button {
      background-color: #fff;
      padding-top: 95px;
 }
-
+.mi_vida_misXV {
+     background-color: #B8030E;
+     padding-top: 95px;
+}
 .about {
      background-color: #fff;
      padding-top: 95px;

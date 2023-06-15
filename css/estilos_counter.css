@@ -93,7 +93,7 @@ main {
   .simply-section {
     width: 60px;
   	}
-
+  /*banner mobile*/
   .banner {
      position: relative;
      background: url(../images/galeriaXV/JON_5210.jpg);
@@ -103,6 +103,17 @@ main {
      min-height: 804px;
      padding-top: 80%;
 	}
+
+	.banner_5 {
+     position: relative;
+     background: url(../images/galeriaXV/instagram_modile.jpg);
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 804px;
+     padding-top: 80%;
+	}
+	/*banner mobile*/
 }
 
 .simply-amount {
