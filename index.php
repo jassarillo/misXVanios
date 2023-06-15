@@ -66,7 +66,7 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">MIS XV AÑOS</a>
+                                 <a class="nav-link" href="index.php">MIS XV AÑOS</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="about.html">CUANDO Y DONDE</a>
@@ -143,7 +143,7 @@
       </div>
       <!-- end Banner 2 -->
 
-      <!-- about -->
+      <!-- mi vida en xv -->
       <div id="about" class="mi_vida_misXV">
          <div class="container">
                      <div class="row">
@@ -166,11 +166,12 @@
                         </div>
                      
                   </div>
+                  <br><br>
                
             </div>
          </div>
       </div>
-      <!-- end about -->
+      <!-- end mi vida en xv -->
       <!-- Banner lugar evento -->
       <div id="about" class="about">
          <div class="container">
@@ -238,12 +239,10 @@
       <div id="gallery"  class="gallery">
          <div class="container">
             <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Mis <span class="green">Fotos!</span></h2>
-                     <!--<p>here are many variations of passages of Lorem Ipsum available, but the majority have suffer</p>-->
-                  </div>
-               </div>
+               <p>
+                  <figure><img src="images/header_mi_vida_xv.jpg" alt="#" width="1200px" height="30px" />
+                  </figure>
+               </p>
             </div>
             <div class="row">
                <div class="col-md-4 col-sm-6">
@@ -296,9 +295,42 @@
       </div>
       <!-- end gallery -->
 
-      
-      <!-- Banner 5 -->
+<!-- mesa regalos -->
       <section class="banner_main">
+         <a href="https://www.sears.com.mx/" target="_blank">
+         <div id="myCarousel" class="carousel slide banner_6" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <!--<div class="row">
+                           <div class="col-md-7 offset-md-5">
+                              <div class="text-bg">
+                                 <h1> ¡Mis 15 años! </h1>
+                                 <span>29 de Julio, 2023</span>
+                              </div>
+                           </div>
+                        </div>-->
+                     </div>
+                  </div>
+               </div>
+             
+
+            </div>
+            
+         </div>
+      </a>
+      </section>
+      <!-- end mesa regalos -->
+      <!-- Banner 5 -->
+
+      <section class="banner_main">
+         <a href="https://www.instagram.com/" target="_blank">
          <div id="myCarousel" class="carousel slide banner_5" data-ride="carousel">
             <ol class="carousel-indicators">
                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -325,6 +357,7 @@
             </div>
             
          </div>
+      </a>
       </section>
       <!-- end banner 5 -->
 

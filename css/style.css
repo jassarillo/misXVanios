@@ -351,7 +351,15 @@ button {
      padding-top: 80%;
 }
 
-
+.banner_6 {
+     position: relative;
+     background: url(../images/mesa_regalos.jpg);
+     background-size: 100% 90%;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 180px;
+     
+}
 
 .text-bg {
      text-align: left;
@@ -515,8 +523,8 @@ button {
      padding-top: 95px;
 }
 .mi_vida_misXV {
-     background-color: #B8030E;
-     padding-top: 95px;
+     background-color: #B8030E;/*#82050d  #9b141d*/
+     padding-top: 45px;
 }
 .about {
      background-color: #fff;
