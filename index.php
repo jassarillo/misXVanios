@@ -78,11 +78,7 @@
                </div>
             </div>
          <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+            
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <div class="container">
@@ -119,43 +115,43 @@
          </div>
       </div>
       <!-- end Banner 2 -->
+      
+      <!-- Banner youtube -->
 
-      <!-- mi vida en xv -->
-      <div id="about" class="mi_vida_misXV">
-         <div class="container">
-                     <div class="row">
-                           <p>
-                          
-                                 <figure><img src="images/header_mi_vida_xv.jpg" alt="#" width="1200px" height="30px" />
-                                 </figure>
-                                 
-                              
-                           </p>
-
-                        </div>
-                        <div class="row row_align">
+      <section class="banner_main">
+         
+         <div id="myCarousel" class="carousel slide banner_7" data-ride="carousel">
+            
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <div class="row">
                            <div class="col-md-12">
-                              
-                                 <iframe  src="https://www.youtube.com/embed/5QNXO5MGBEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%" height="500px%">
+                              <iframe  src="https://www.youtube.com/embed/5QNXO5MGBEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%" height="500px%">
                                  </iframe>
-                              
                            </div>
                         </div>
-                     
+                     </div>
                   </div>
-                  <br><br>
-               
+               </div>
+             
+
             </div>
+            <br>
+            
          </div>
-      </div>
-      <!-- end mi vida en xv -->
+      
+      </section>
+      <!-- end banner  -->
+
       <!-- Banner lugar evento -->
       <div id="about" class="about">
          <div class="container">
             <div class="row">
                <div class="col-md-6">
                  <div class="about_img">
-                     <figure><img src="images/lugares_1.jpg" alt="#"/></figure>
+                     <figure><img src="images/lugares_1.jpg" alt="#" width="1200px" height="345px" /></figure>
                   </div>
                   <div class="row">
                      <div class="col-md-3"></div>
@@ -184,11 +180,7 @@
       <!-- Itinerario -->
       <section class="banner_main">
          <div id="myCarousel" class="carousel slide banner_4" data-ride="carousel">
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+            
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <div class="container">
@@ -276,11 +268,7 @@
       <section class="banner_main">
          <a href="https://www.sears.com.mx/" target="_blank">
          <div id="myCarousel" class="carousel slide banner_6" data-ride="carousel">
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+            
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <div class="container">
@@ -309,11 +297,7 @@
       <section class="banner_main">
          <a href="https://www.instagram.com/" target="_blank">
          <div id="myCarousel" class="carousel slide banner_5" data-ride="carousel">
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+            
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <div class="container">

@@ -333,7 +333,7 @@ button {
 
 .banner_4 {
      position: relative;
-     background: url(../images/itinerario.jpg);
+     background: url(../images/itinerario1200x800.jpg);
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
@@ -343,7 +343,7 @@ button {
 
 .banner_5 {
      position: relative;
-     background: url(../images/banner5.jpg);
+     background: url(../images/instagram1200x800.jpg);
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
@@ -358,6 +358,17 @@ button {
      background-position: center;
      background-repeat: no-repeat;
      min-height: 180px;
+     
+}
+
+.banner_7 {
+     position: relative;
+     background: url(../images/fondoVideo.jpg);
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 804px;
+     padding-top: 10%;
      
 }
 
@@ -418,11 +429,11 @@ button {
 .text-bg .read_more:hover {
      background-color: #B8030E;
 }
-
+/*
 .banner .carousel-indicators {
      display: none;
-}
-
+}*/
+/*
 #myCarousel .carousel-control-prev,
 #myCarousel .carousel-control-next {
      width: 36px;
@@ -468,7 +479,7 @@ button {
 #myCarousel .carousel-control-next:hover,
 #myCarousel .carousel-control-next:focus {
      right: 45%;
-}
+}*/
 
 
 /** end banner section **/
@@ -701,10 +712,10 @@ button {
 .design_img figure img {
      width: 100%;
 }
-
+/*
 .banner_design .carousel-indicators {
      display: none;
-}
+}*/
 
 #design .carousel-control-prev,
 #design .carousel-control-next {
@@ -906,10 +917,10 @@ button {
      font-size: 17px;
      line-height: 31px;
 }
-
+/*
 .banner_testimonial .carousel-indicators {
      display: none;
-}
+}*/
 
 .pad_left0 {
      padding-left: 0;

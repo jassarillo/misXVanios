@@ -96,11 +96,11 @@ main {
   /*banner mobile*/
   .banner {
      position: relative;
-     background: url(../images/jon_5210.jpg);
+     background: url(../images/principal1080x1620.jpg);
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
-     min-height: 804px;
+     min-height: 704px;
      padding-top: 80%;
 	}
 
@@ -112,6 +112,16 @@ main {
      background-repeat: no-repeat;
      min-height: 804px;
      padding-top: 80%;
+	}
+
+	.banner_7 {
+     position: relative;
+     background: url(../images/fondoVideo.jpg);
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 804px;
+     padding-top: 30%;
 	}
 	/*banner mobile*/
 }
