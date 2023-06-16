@@ -96,7 +96,7 @@ main {
   /*banner mobile*/
   .banner {
      position: relative;
-     background: url(../images/galeriaXV/JON_5210.jpg);
+     background: url(../images/jon_5210.jpg);
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
@@ -106,7 +106,7 @@ main {
 
 	.banner_5 {
      position: relative;
-     background: url(../images/galeriaXV/instagram_modile.jpg);
+     background: url(../images/instagram_modile.jpg);
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
