@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>limelight</title>
+      <title>Mis XV Años</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -43,21 +43,12 @@
          <div class="loader"><img src="images/loading.gif" alt="#"/></div>
       </div>
       <!-- end loader -->
-      <!-- header -->
-      <header>
-         <!-- header inner -->
-         <div class="header">
-            <div class="container">
-               <div class="row">
-                  <!--<div class="col-md-12 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>-->
+
+      <!-- banner jas-->
+      
+      <section class="banner_main">
+         <div class="container">
+               <div class="row position_menu">
                   <div class="col-md-12 ">
                      <nav class="navigation navbar navbar-expand-md navbar-dark ">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,25 +71,12 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="testimonial.html"> CONFIRMAR ASISTENCIA </a>
                               </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.html"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.html"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                              </li>
                            </ul>
                         </div>
                      </nav>
                   </div>
                </div>
             </div>
-         </div>
-      </header>
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- banner jas-->
-      
-      <section class="banner_main">
          <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
             <ol class="carousel-indicators">
                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -110,8 +88,7 @@
                   <div class="container">
                      <div class="carousel-caption relative">
                         <div class="row">
-                           <div class="col-md-1 offset-md-2">
-                              <a href="https://goo.gl/maps/geoVdnfKQj8HjDXa8" target="_blank">link</a>                                
+                           <div class="col-md-1 offset-md-2">                               
                                  <div class="div-count" id="cuenta"></div>
                            </div>
                         </div>
@@ -159,7 +136,7 @@
                         <div class="row row_align">
                            <div class="col-md-12">
                               
-                                 <iframe  src="https://www.youtube.com/embed/5QNXO5MGBEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%">
+                                 <iframe  src="https://www.youtube.com/embed/5QNXO5MGBEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%" height="500px%">
                                  </iframe>
                               
                            </div>
