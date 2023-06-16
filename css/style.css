@@ -304,7 +304,7 @@ button {
 
 .banner {
      position: inherit;
-     background: url(../images/banner1.jpg);
+     background: url(../images/principal1080x1620.jpg);
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
@@ -1251,4 +1251,8 @@ ul.link_menu li a:hover {
 
 .position_menu{
      position: absolute;
+}
+
+.galeriff{
+     
 }

@@ -208,9 +208,8 @@
       <div id="gallery"  class="gallery">
          <div class="container">
             <div class="row">
-               <p>
-                  <figure><img src="images/header_mi_vida_xv.jpg" alt="#" width="1200px" height="30px" />
-                  </figure>
+               <p class="galeriff">
+                  GALERIA DE FOTOS
                </p>
             </div>
             <div class="row">
