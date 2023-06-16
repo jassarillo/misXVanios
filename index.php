@@ -229,7 +229,7 @@
                </div>
                <div class="col-md-4 col-sm-6">
                   <div class="gallery_img">
-                     <figure><img src="images/galeriaXV/JON_4596.jpg" alt="#"/></figure>
+                     <figure><img src="images/galeriaxv/jon_4596.jpg" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-4 col-sm-6">
