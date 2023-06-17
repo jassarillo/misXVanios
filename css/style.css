@@ -309,7 +309,7 @@ button {
      background-position: center;
      background-repeat: no-repeat;
      min-height: 804px;
-     padding-top: 80%;
+     padding-top: 60%;
 }
 .banner_2 {
      position: relative;
@@ -353,7 +353,7 @@ button {
 
 .banner_6 {
      position: relative;
-     background: url(../images/mesa_regalos.jpg);
+     background: url(../images/regalos_liverpool_sears.jpg);
      background-size: 100% 90%;
      background-position: center;
      background-repeat: no-repeat;
@@ -1254,5 +1254,8 @@ ul.link_menu li a:hover {
 }
 
 .galeriff{
-     
+     color: #B8030E;
+     font-style: normal;
+     font-size: 24px;
+     text-align: center;
 }

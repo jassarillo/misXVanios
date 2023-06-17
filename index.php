@@ -108,7 +108,7 @@
                </div>
                <div class="col-md-6">
                   <div class="about_img">
-                     <figure><img src="images/01_2.jpg" alt="#"/></figure>
+                     <figure><img src="images/01_02.jpg" alt="#"/></figure>
                   </div>
                </div>
             </div>
@@ -128,8 +128,10 @@
                      <div class="carousel-caption relative">
                         <div class="row">
                            <div class="col-md-12">
-                              <iframe  src="https://www.youtube.com/embed/5QNXO5MGBEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%" height="500px%">
-                                 </iframe>
+                              <!--<iframe  src="https://youtu.be/AwBIFUbM3gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%" height="500px%">
+                                 </iframe>-->
+
+                                 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" type="text/html" src="https://www.youtube.com/embed/AwBIFUbM3gQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com" width="100%" height="500px%"><div><small><a href="https://youtubeembedcode.com/en/">https://youtubeembedcode.com/en/</a></small></div><div><small><a href="https://xn--snabbln5000-28a.com/lana-3000/">låna 3000 utan uc</a></small></div><div><small><a href="https://youtubeembedcode.com/en/">youtubeembedcode en</a></small></div><div><small><a href="https://xn--sms-ln-direkt-utbetalning-gfc.se/">smslån direkt utbetalning</a></small></div></iframe>
                            </div>
                         </div>
                      </div>
@@ -148,6 +150,16 @@
       <!-- Banner lugar evento -->
       <div id="about" class="about">
          <div class="container">
+
+            <!--<div class="row">
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <a class="read_more" href="https://goo.gl/maps/geoVdnfKQj8HjDXa8">
+                        <figure><img src="images/lugares_1.jpg" alt="#"/></figure>
+                     </a>
+                  </div>
+               </div>
+            </div>-->
             <div class="row">
                <div class="col-md-6">
                  <div class="about_img">
@@ -207,10 +219,10 @@
       <!-- gallery -->
       <div id="gallery"  class="gallery">
          <div class="container">
-            <div class="row">
-               <p class="galeriff">
+            <div class="row galeriff">
+               <div class="col-md-12">
                   GALERIA DE FOTOS
-               </p>
+               </div>
             </div>
             <div class="row">
                <div class="col-md-4 col-sm-6">
