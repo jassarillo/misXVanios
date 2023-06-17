@@ -145,49 +145,57 @@
          </div>
       
       </section>
-      <!-- end banner  -->
+      <!-- end banner youtube  -->
 
-      <!-- Banner lugar evento -->
+      <!-- Banner recepcion igle -->
+
       <div id="about" class="about">
          <div class="container">
-
-            <!--<div class="row">
-               <div class="col-md-4 col-sm-6">
-                  <div class="gallery_img">
-                     <a class="read_more" href="https://goo.gl/maps/geoVdnfKQj8HjDXa8">
-                        <figure><img src="images/lugares_1.jpg" alt="#"/></figure>
-                     </a>
-                  </div>
-               </div>
-            </div>-->
             <div class="row">
                <div class="col-md-6">
                  <div class="about_img">
-                     <figure><img src="images/lugares_1.jpg" alt="#" width="1200px" height="345px" /></figure>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-3"></div>
-                     <div class="col-md-5" align="center">
-                        <a class="read_more" href="https://goo.gl/maps/geoVdnfKQj8HjDXa8"> Ver en mapa</a>
-                     </div>
+
+                     <figure>
+                        <a  href="https://goo.gl/maps/geoVdnfKQj8HjDXa8"><img src="images/iglesia.jpg" alt="#"/>
+                        </a>
+                  </figure>
                   </div>
                </div>
                <div class="col-md-6">
                   <div class="about_img">
-                     <figure><img src="images/lugares_2.jpg" alt="#"/></figure>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-3"></div>
-                     <div class="col-md-5" align="center">
-                        <a class="read_more" href="https://goo.gl/maps/7Uu5zEbczfuAJQaH8"> Ver en mapa</a>
-                     </div>
+                     <figure>
+                        <a  href="https://goo.gl/maps/geoVdnfKQj8HjDXa8">
+                           <img src="images/recepcion.jpg" alt="#"/>
+                        </a>
+                     </figure>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- end Banner lugar vento -->
+      <!--<div id="about" class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                 <div class="about_img">
+                     <a class="read_more" href="https://goo.gl/maps/geoVdnfKQj8HjDXa8">
+                        <figure><img src="images/iglesia.jpg" alt="#"/></figure>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img">
+                     <a class="read_more" href="https://goo.gl/maps/geoVdnfKQj8HjDXa8">
+                        <figure><img src="images/recepcion.jpg" alt="#"/></figure>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>-->
+      <!-- end Banner recepcion igle -->
 
+      
 
       <!-- Itinerario -->
       <section class="banner_main">
