@@ -156,7 +156,8 @@
                  <div class="about_img">
 
                      <figure>
-                        <a  href="https://goo.gl/maps/geoVdnfKQj8HjDXa8"><img src="images/iglesia.jpg" alt="#"/>
+                        <a  href="https://goo.gl/maps/geoVdnfKQj8HjDXa8">
+                           <img src="images/iglesia.jpg" alt="#"/>
                         </a>
                   </figure>
                   </div>
@@ -164,7 +165,7 @@
                <div class="col-md-6">
                   <div class="about_img">
                      <figure>
-                        <a  href="https://goo.gl/maps/geoVdnfKQj8HjDXa8">
+                        <a  href="https://goo.gl/maps/P9JZtvnQUb2vmzEs5">
                            <img src="images/recepcion.jpg" alt="#"/>
                         </a>
                      </figure>
