@@ -84,10 +84,11 @@
                   <div class="container">
                      <div class="carousel-caption relative">
                         <div class="row">
-                           <div class="col-md-1 offset-md-2">                               
+                           <div class="col-md-2 offset-md-1">                               
                                  <div class="div-count" id="cuenta"></div>
                            </div>
                         </div>
+                        
                      </div>
                   </div>
                </div>
@@ -174,30 +175,7 @@
             </div>
          </div>
       </div>
-      <!--<div id="about" class="about">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                 <div class="about_img">
-                     <a class="read_more" href="https://goo.gl/maps/geoVdnfKQj8HjDXa8">
-                        <figure><img src="images/iglesia.jpg" alt="#"/></figure>
-                     </a>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="about_img">
-                     <a class="read_more" href="https://goo.gl/maps/geoVdnfKQj8HjDXa8">
-                        <figure><img src="images/recepcion.jpg" alt="#"/></figure>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>-->
-      <!-- end Banner recepcion igle -->
-
-      
-
+ 
       <!-- Itinerario -->
       <section class="banner_main">
          <div id="myCarousel" class="carousel slide banner_4" data-ride="carousel">
@@ -312,6 +290,33 @@
       </a>
       </section>
       <!-- end mesa regalos -->
+
+      
+
+<!-- Banner folio_boleto -->
+      <div id="about" class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                 <div class="about_img">
+                     <figure><img src="images/07.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-6 buscar_folio">
+                  <!--<div class="about_img">
+                     <figure><img src="images/08.jpg" alt="#"/></figure>
+                  </div>-->
+                  <form action="buscaFolio/listado.php" method="post">
+                     <input class="form-control entry_folio" placeholder="Ej. LB15133" id="idFolio" name="idFolio" type="text" name="folio">
+                     <button type="submit" class="btn btn-lg btn-danger submit_folio">Buscar</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end Banner folio_boleto -->
+
+
       <!-- Banner 5 -->
 
       <section class="banner_main">

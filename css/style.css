@@ -301,7 +301,28 @@ button {
 
 
 /** banner section **/
+.entry_folio{
+    position: absolute;
+    top: 350px;
+    margin-left: 120px;
+    width: 160px;
+    box-shadow: 10px 12px 6px -6px #777;
 
+}
+.submit_folio{
+    position: absolute;
+    top: 430px;
+    margin-left: 120px;
+
+}
+.buscar_folio{
+     position: relative;
+     background: url(../images/02.jpg);
+     background-size: 90% 90%;
+     background-position: center;
+     background-repeat: no-repeat;
+    
+}
 .banner {
      position: inherit;
      background: url(../images/principal1080x1620.jpg);
@@ -354,7 +375,7 @@ button {
 .banner_6 {
      position: relative;
      background: url(../images/regalos_liverpool_sears.jpg);
-     background-size: 100% 90%;
+     background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
      min-height: 180px;
@@ -371,6 +392,8 @@ button {
      padding-top: 10%;
      
 }
+
+
 
 .text-bg {
      text-align: left;

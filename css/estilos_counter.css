@@ -71,7 +71,8 @@ main {
 #cuenta {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 100px;
+	margin-bottom: 350px;
+	/*margin-left: -05px;*/
 
 }
 
@@ -86,7 +87,7 @@ main {
 	align-items: center;
 	justify-content: center;
 	border: 1px solid white;
-	padding: 15px;
+	padding: 30px;
 }
 
 @media (max-width: 414px) {
