@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli("143.198.231.211", "xv", "UYUhYCwHo4OPHnILNDxP", "xv");
+$conn = new mysqli("localhost", "root", "root", "xv_anios");
 
 if ($conn->connect_error) {
     die('Error de conexion ' . $conn->connect_error);

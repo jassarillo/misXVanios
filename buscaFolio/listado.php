@@ -97,6 +97,10 @@ $registros = mysqli_query($conn,
               <div class="col-md-3">
                 <button class="btn-primary btn-lg" name="guardar_list">Guardar</button>
               </div>
+              <div class="col-md-6"></div>
+              <div class="col-md-3">
+                <a href="../pdfBoleto/pdf.php" class="form-control btn-success"><i class="bi bi-file-earmark-pdf-fill"></i> Boleto</a>
+              </div>
             </div>
 
 
@@ -108,5 +112,25 @@ $registros = mysqli_query($conn,
 </section>
 
 
+
+
 </body>
 </html>
+<script type="text/javascript">
+  $(".permisos").change(function () 
+                              {
+                                if ($(this).is(':checked')) 
+                                {
+                                    //console.log($(this).val());
+                                    if ($.inArray($(this).val(), permisos) == -1) {
+                                        
+                                        permisos.push($(this).val());
+                                    }
+                                }
+                                else 
+                                {
+                                  permisos.splice($.inArray($(this).val(), permisos), 1);
+                                }
+                                //console.log(permisos);
+                            });
+</script>
