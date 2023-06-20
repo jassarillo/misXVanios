@@ -365,11 +365,11 @@ button {
 .banner_5 {
      position: relative;
      background: url(../images/instagram1200x800.jpg);
-     background-size: 100% 100%;
+     background-size: 100% 95%;
      background-position: center;
      background-repeat: no-repeat;
-     min-height: 804px;
-     padding-top: 80%;
+     min-height: 704px;
+     padding-top: 70%;
 }
 
 .banner_6 {
