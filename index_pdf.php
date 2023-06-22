@@ -34,7 +34,7 @@ error_reporting(E_ALL);
   $googleMaps = "elementos/googleMaps.png";
   $googleMaps64 = "data:image/png;base64," . base64_encode(file_get_contents($googleMaps));
 
-  $qrcode = "../buscaFolio/phpqrcode/temp/test.png";
+  $qrcode = "buscaFolio/phpqrcode/temp/test.png";
   $qrcode64 = "data:image/png;base64," . base64_encode(file_get_contents($qrcode));
 ?>
   <style type="text/css">
@@ -106,7 +106,7 @@ error_reporting(E_ALL);
     .fam_nombre{
       position: absolute;
       top: 390px;
-      margin-left: 242px;
+      margin-left: 238px;
     }
     .nombre_desc{
       position: absolute;
@@ -179,8 +179,8 @@ $resultado = $db->query('SELECT count(id) as count FROM invitados where estatus 
 $personas = $resultado->fetch(); 
 ?>
 
-  <h2 class="fam_nombre">Familia_conneserver:</h2>
-  <h2 class="invitados">Nro._conneserver de Invitados:</h2>
+  <h2 class="fam_nombre">Familia:</h2>
+  <h2 class="invitados">Nro. de Invitados:</h2>
   <h2 class="nombre_desc"><?php echo $invitados_name['nombre'];?></h2>
   <h2 class="nro_desc"><?php echo $personas['count'];?></h2>
 
