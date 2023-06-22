@@ -163,7 +163,8 @@ error_reporting(E_ALL);
 $idFolio =$_REQUEST['idFolio'];
 $opciones = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"];
 try {
-    $db = new PDO('mysql:host=localhost;dbname=xv_anios', 'root', 'root', $opciones);
+    $db = new PDO('mysql:host=143.198.231.211;dbname=xv', 'xv', 'UYUhYCwHo4OPHnILNDxP', $opciones);
+    //$db = new PDO('mysql:host=localhost;dbname=xv_anios', 'root', 'root', $opciones);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     echo 'Falló la conexión: ' . $e->getMessage();
@@ -178,8 +179,8 @@ $resultado = $db->query('SELECT count(id) as count FROM invitados where estatus 
 $personas = $resultado->fetch(); 
 ?>
 
-  <h2 class="fam_nombre">Familia:</h2>
-  <h2 class="invitados">Nro. de Invitados:</h2>
+  <h2 class="fam_nombre">Familia_conneserver:</h2>
+  <h2 class="invitados">Nro._conneserver de Invitados:</h2>
   <h2 class="nombre_desc"><?php echo $invitados_name['nombre'];?></h2>
   <h2 class="nro_desc"><?php echo $personas['count'];?></h2>
 

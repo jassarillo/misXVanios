@@ -1,7 +1,7 @@
 <?php
 ob_start();
 
-require('index.php');
+require('index_pdf.php');
 
 $html = ob_get_clean();
 

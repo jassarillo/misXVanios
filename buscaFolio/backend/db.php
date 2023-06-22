@@ -4,10 +4,15 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 //("localhost", "root", "root", "xv_anios");
 $pdo=null;
-$host="localhost";
+/*$host="localhost";
 $user="root";
 $password="root";
-$bd="xv_anios";
+$bd="xv_anios";*/
+
+$host="143.198.231.211";
+$user="xv";
+$password="UYUhYCwHo4OPHnILNDxP";
+$bd="xv";
 
 function conectar(){
     try{
