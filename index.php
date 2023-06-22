@@ -322,7 +322,6 @@
       <section class="banner_main">
          <a href="https://www.instagram.com/" target="_blank">
          <div id="myCarousel" class="carousel slide banner_5" data-ride="carousel">
-            
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <div class="container">

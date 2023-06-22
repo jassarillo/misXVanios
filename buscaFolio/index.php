@@ -1,3 +1,11 @@
+<?php 
+
+ $query ="SELECT *  FROM `invitados` where folio =" . $idFolio . " and  `estatus` = 1  ";
+
+  $res = mysql_query($query, $conn );
+  echo $res['nombre'];
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
