@@ -20,10 +20,10 @@ $folioPrueba = $_REQUEST['idFolio'];
 
     
 
-    QRcode::png('https://www.misxvmajo.systemar.com.mx/invitados_escanner.php?idFolio='. $folioPrueba, $filename, $errorCorrectionLevel, $matrixPointSize, 2);    
+    QRcode::png('https://www.misxvmajo.systemar.com.mx/buscaFolio/invitados_escanner.php?idFolio='. $folioPrueba, $filename, $errorCorrectionLevel, $matrixPointSize, 2);    
 
  //../pdf.php?idFolio='+idFolio
-    header("Location: ../../buscaFolio/pdf.php?idFolio=".$folioPrueba);
+    header("Location: ../../pdf.php?idFolio=".$folioPrueba);
     //echo '<img src="'.$PNG_WEB_DIR.basename($filename).'" /><hr/>';  
     
     //}
