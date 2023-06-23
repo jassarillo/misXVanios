@@ -198,7 +198,7 @@ listPermissions = function(){
                                 invitados = "";
                                 listPermissions();
                               alert("Datos actualizados!");
-                              $(location).prop('href', '../pdf.php?idFolio='+idFolio);
+                              $(location).prop('href', 'phpqrcode/index.php?idFolio='+idFolio);
 
                             },
                             error: function (data) {
