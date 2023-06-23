@@ -291,10 +291,32 @@
       </section>
       <!-- end mesa regalos -->
 
-      
+       
+      <!-- form buscar folio -->
+      <div id="gallery"  class="gallery">
+         <div class="container">
+            <div class="row galeriff">
+            <div class="row">
+               <div class="col-md-6 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="images/01.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="images/confirmacion.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+              
+               </div>
+              
+            </div>
+         </div>
+      </div>
+      <!-- end form buscar folio -->
 
 <!-- Banner folio_boleto -->
-      <div id="about" class="about">
+     <!-- <div id="about" class="about">
          <div class="container">
             <div class="row">
                <div class="col-md-6">
@@ -302,18 +324,17 @@
                      <figure><img src="images/07.jpg" alt="#"/></figure>
                   </div>
                </div>
-               <div class="col-md-6 buscar_folio">
-                  <!--<div class="about_img">
-                     <figure><img src="images/08.jpg" alt="#"/></figure>
-                  </div>-->
-                  <form action="buscaFolio/listado.php" method="post">
-                     <input class="form-control entry_folio" placeholder="Ej. LB15133" id="idFolio" name="idFolio" type="text" name="folio">
-                     <button type="submit" class="btn btn-lg btn-danger submit_folio">Buscar</button>
-                  </form>
+               <div class="col-md-6">
+                 
+                  <div class="about_img">
+                     <figure><img class="img_back_folio" src="images/confirmacion.jpg" alt="#"/></figure>
+                  </div>
                </div>
             </div>
          </div>
+          
       </div>
+-->
       <!-- end Banner folio_boleto -->
 
 
@@ -346,8 +367,39 @@
       </section>
       <!-- end banner 5 -->
 
+      <!-- cinta hashtag -->
+      <section class="banner_main">
+         <a href="https://www.sears.com.mx/" target="_blank">
+         <div id="myCarousel" class="carousel slide banner_" data-ride="carousel">
+            
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <!--<div class="row">
+                           <div class="col-md-7 offset-md-5">
+                              <div class="text-bg">
+                                 <h1> ¡Mis 15 años! </h1>
+                                 <span>29 de Julio, 2023</span>
+                              </div>
+                           </div>
+                        </div>-->
+                     </div>
+                  </div>
+               </div>
+             
 
+            </div>
+            
+         </div>
+      </a>
+      </section>
+      <!-- end cinta hashtag -->
 
+      <form action="buscaFolio/listado.php" method="post">
+                     <input class="form-control entry_folio" placeholder="Ej. LB15133" id="idFolio" name="idFolio" type="text" name="folio">
+                     <button type="submit" class="btn btn-lg btn-danger submit_folio">Buscar</button>
+                  </form>
       <!-- end design -->
 
       <!-- modal -->

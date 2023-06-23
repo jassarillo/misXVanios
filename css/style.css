@@ -302,17 +302,17 @@ button {
 
 /** banner section **/
 .entry_folio{
-    position: absolute;
-    top: 350px;
-    margin-left: 120px;
+    position: relative;
+    top: -1520px;
+    margin-left: 900px;
     width: 160px;
     box-shadow: 10px 12px 6px -6px #777;
 
 }
 .submit_folio{
-    position: absolute;
-    top: 430px;
-    margin-left: 120px;
+    position: relative;
+    top: -1450px;
+    margin-left: 900px;
 
 }
 .buscar_folio{
@@ -583,7 +583,9 @@ button {
      line-height: 31px;
      padding-bottom: 35px;
 }
+.img_back_folio{
 
+}
 .about_img {
      padding: 40px 30px 45px 30px;
 }
