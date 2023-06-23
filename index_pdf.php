@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 <html>
 <head>
   <?php 
-  
+  $idFolio =$_REQUEST['idFolio'];
   
   $fondo = "elementos/fondo.jpg";
   $imagenFondo = "data:image/png;base64," . base64_encode(file_get_contents($fondo));
@@ -34,7 +34,7 @@ error_reporting(E_ALL);
   $googleMaps = "elementos/googleMaps.png";
   $googleMaps64 = "data:image/png;base64," . base64_encode(file_get_contents($googleMaps));
 
-  $qrcode = "buscaFolio/phpqrcode/temp/test.png";
+  $qrcode = "buscaFolio/phpqrcode/temp/testinvitado_". $idFolio .".png";
   $qrcode64 = "data:image/png;base64," . base64_encode(file_get_contents($qrcode));
 ?>
   <style type="text/css">
@@ -160,7 +160,7 @@ error_reporting(E_ALL);
 <body>
 
 <?php 
-$idFolio =$_REQUEST['idFolio'];
+
 $opciones = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"];
 try {
     $db = new PDO('mysql:host=143.198.231.211;dbname=xv', 'xv', 'UYUhYCwHo4OPHnILNDxP', $opciones);
