@@ -7,8 +7,8 @@ $pdo=null;
 /*$host="localhost";
 $user="root";
 $password="root";
-$bd="xv_anios";*/
-
+$bd="xv_anios";
+*/
 $host="143.198.231.211";
 $user="xv";
 $password="UYUhYCwHo4OPHnILNDxP";

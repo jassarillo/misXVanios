@@ -171,11 +171,11 @@ try {
 }
 
 
-$registros = $db->query('SELECT * FROM invitados where  folio =' . $idFolio . ' limit 1');
+$registros = $db->query("SELECT * FROM invitados where  folio ='" . $idFolio . "' limit 1");
 $invitados_name = $registros->fetch(); 
     
 
-$resultado = $db->query('SELECT count(id) as count FROM invitados where estatus = 1 and folio =' . $idFolio);
+$resultado = $db->query("SELECT count(id) as count FROM invitados where estatus = 1 and folio ='" . $idFolio . "'");
 $personas = $resultado->fetch(); 
 ?>
 

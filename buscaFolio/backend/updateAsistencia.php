@@ -12,7 +12,7 @@ header('Access-Control-Allow-Origin: *');
     //print_r($invitadosSeparados);
 
 
-    $query="UPDATE invitados SET estatus=0 WHERE folio =" . $idFolio;
+    $query="UPDATE invitados SET estatus=0 WHERE folio ='" . $idFolio."'";
     $resultado=metodoPut($query);
 
     $query="UPDATE invitados SET estatus=1 WHERE id in ($invitadosSeparados)";

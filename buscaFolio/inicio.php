@@ -8,7 +8,7 @@ header('Access-Control-Allow-Origin: *');
 
 if($_SERVER['REQUEST_METHOD']=='GET'){
     if(isset($_GET['idFolio'])){
-        $query="select * from `invitados` where folio =". $_GET['idFolio'];
+        $query="select * from `invitados` where folio ='". $_GET['idFolio']."'";
         $resultado=metodoGet($query);
         //print_r(array_values($resultado));
         echo json_encode($resultado->fetchAll(PDO::FETCH_ASSOC));

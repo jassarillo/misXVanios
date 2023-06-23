@@ -53,7 +53,7 @@ $folioPrueba = $_POST['idFolio'];
                 <tr>
                     <th scope="col">Fecha</th>
                     <th scope="col">Nombre</th>
-                    <th scope="col">No. mesa</th>
+                    <th scope="col">Familia</th>
                     <th scope="col">Folio</th>
                     <th scope="col">
                       <input type="checkbox" id="checkTodos">
@@ -148,7 +148,7 @@ listPermissions = function(){
                           '<tr class="otrasFilas">' +
                               '<td   >'+ opt.fecha  +'</td> ' +
                               '<td   >'+ opt.nombre +'</td> ' +
-                              '<td   >'+ opt.nomesa +'</td> ' +
+                              '<td   >'+ opt.familia +'</td> ' +
                               '<td   >'+ opt.folio  +'</td> ' +
                               '<td   >'+ inputCheck +'</td> ' +
                           '</tr>');
@@ -207,7 +207,7 @@ listPermissions = function(){
                         });
                    
                         //txt = "You pressed Cancel!";
-                });//Fin Guardar Datos
+    });//Fin Guardar Datos
 
     function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");

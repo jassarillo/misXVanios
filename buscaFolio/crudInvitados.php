@@ -32,7 +32,7 @@ ini_set('display_errors', '1');
 </head>
 <body>
     
-<section class="vh-100" style="background-color: #eee;">
+<section style="background-color: #eee;">
   
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -45,7 +45,7 @@ ini_set('display_errors', '1');
               </div> 
               <div class="col-md-6"></div>
               <div class="col-md-3">
-                <a href="../index.php" class="form-control btn-success"><i class="bi bi-plus"></i>Invitado</a>
+                <button type="button" class="btn btn-success" onclick="show_hidde();" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="bi bi-plus"></i>Invitado</button>
               </div> 
             </div>
             <h4 class="text-center my-3 pb-3">Listado de invitados </h4>
@@ -57,14 +57,11 @@ ini_set('display_errors', '1');
                 <tr>
                     <th scope="col">Fecha</th>
                     <th scope="col">Nombre</th>
-                    <th scope="col">No. mesa</th>
+                    <th scope="col">Familia</th>
                     <th scope="col">Folio</th>
                     <th scope="col">
-                      
                       Acción
                     </th>
-
-              
                 </tr>
               </thead>
               <tbody>
@@ -78,7 +75,6 @@ ini_set('display_errors', '1');
               </div>
               <div class="col-md-3"></div>
               <div class="col-md-3">
-                
               </div>
             </div>
           </div>
@@ -88,7 +84,49 @@ ini_set('display_errors', '1');
   </div>
 </section>
 
-
+<!--
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nuevo Invitado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form id="formCreate">
+        <input type="hidden" name="id_input" id="id_input" value="">
+      <div class="modal-body">
+        
+          <div class="form-group">
+            <label for="familia" class="col-form-label">Familia:</label>
+            <input type="text" class="form-control" id="familia" name="familia" required>
+          </div>
+          <div class="form-group">
+            <label for="nombre_id" class="col-form-label">Nombre Invitado:</label>
+            <input type="text" class="form-control" id="nombre_id" name="nombre_id" required>
+          </div>
+          <div class="form-group">
+            <label for="folio" class="col-form-label">Código:</label>
+            <input type="text" class="form-control" id="folio" name="folio" required>
+          </div>
+          <!--<div class="form-group">
+            <label for="recipient-name" class="col-form-label">No Mesa:</label>
+            <input type="text" class="form-control" id="recipient-name" required>
+          </div>-->
+        
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn btn-primary" id="guardar" value="Guardar">
+        <input type="submit" class="btn btn-success" id="actualiza" value="Actualiza" hidden>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
 <!-- Modal Registro Exitoso! -->
 <!--<div class="alert alert-success" role="alert">
   This is a success alert—check it out!
@@ -116,8 +154,66 @@ var invitados = new Array();
     });
   
     
+ $("#guardar").click(function() { //Guardar Datos
+      $("#formCreate").submit(function(e){
+        e.preventDefault();
+      });
+            familia = $("#familia").val();
+            nombre = $("#nombre_id").val();
+            folio = $("#folio").val();
 
-});  
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "backend/insertInvitado.php",
+                data: {"familia": familia, "nombre": nombre, "folio": folio },
+                success: function (data) {
+                  $("#nombre_id").val('');
+                   $("#element").val('');
+                  //$("#folio").val('');
+                  listPermissions();
+                  alert("Datos actualizados!");
+
+                },
+                error: function (data) {
+                    console.log(data);
+                }
+            });
+                   
+                        //txt = "You pressed Cancel!";
+      });//Fin Guardar Datos
+
+$("#actualiza").click(function() { //Guardar Datos
+      $("#formCreate").submit(function(e){
+        e.preventDefault();
+      });
+            familia = $("#familia").val();
+            nombre = $("#nombre_id").val();
+            folio = $("#folio").val();
+            id_input = $("#id_input").val();
+
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "backend/actualizaInviData.php",
+                data: {"familia": familia, "nombre": nombre, "folio": folio, "id_input":id_input },
+                success: function (data) {
+                  $("#nombre_id").val('');
+                   $("#element").val('');
+                  //$("#folio").val('');
+                  listPermissions();
+                  alert("Datos actualizados!");
+
+                },
+                error: function (data) {
+                    console.log(data);
+                }
+            });
+                   
+                        //txt = "You pressed Cancel!";
+      });//Fin Guardar Datos
+ 
+});  //Fin Document ready
 
 
 listPermissions = function(){
@@ -143,9 +239,13 @@ listPermissions = function(){
                           '<tr class="otrasFilas">' +
                               '<td   >'+ opt.fecha  +'</td> ' +
                               '<td   >'+ opt.nombre +'</td> ' +
-                              '<td   >'+ opt.nomesa +'</td> ' +
+                              '<td   >'+ opt.familia +'</td> ' +
                               '<td   >'+ opt.folio  +'</td> ' +
-                              '<td   >'+ '<button type="button" class="form-control btn-primary" role="button" id="guardar">editar</button>' +'</td> ' +
+                              '<td   >'+ 
+                              '<button type="button" id="editar_btn" onclick="editarInvitado('+ opt.id+');" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"><i class="bi bi-pencil"></i></button>' +
+
+                              '<button type="button" class="btn btn-danger" role="button" id="eliminar"><i class="bi bi-trash"></i>  </button>'+
+                              '</td> ' +
                           '</tr>');
                   noInt++;
               });
@@ -176,34 +276,34 @@ listPermissions = function(){
     };  //fin listadoPermissions
 
 
-    $("#guardar").click(function() { //Guardar Datos
-                        console.log(invitados);
-                        idFolio = $("#idFolio").val();
-                        id_user = $("#id_user").val();
-                        
-                        $.ajax({
-                            type: "POST",
-                            dataType: "json",
-                            url: "backend/updateAsistencia.php",
-                            data: {"invitados": invitados, "idFolio": idFolio },
+    function editarInvitado(id) {
+      //console.log(id);
+      $("#id_input").val(id);
+      $.ajax({
+                type: "get",
+                dataType: "json",
+                url: "backend/getEditInvitado.php?id="+id,
+                success: function (data) {
+                  //console.log(data[0].familia);
+                  $("#familia").val(data[0].familia);
+                  $("#nombre_id").val(data[0].nombre);
+                  $("#folio").val(data[0].folio);
+                  $("#familia").prop( "disabled", true );
+                  $("#guardar").prop( "hidden", true );
+                  $("#actualiza").prop( "hidden", false );
 
-                            success: function (data) {
+                },
+                error: function (data) {
+                    console.log(data);
+                }
+            });
+    }
 
-                              
-                                invitados = "";
-                                listPermissions();
-                              alert("Datos actualizados!");
-                              $(location).prop('href', '../pdfBoleto/pdf.php?idFolio='+idFolio);
-
-                            },
-                            error: function (data) {
-                                console.log(data);
-                            }
-                        });
-                   
-                        //txt = "You pressed Cancel!";
-                });//Fin Guardar Datos
-
+    function show_hidde() { 
+      $("#guardar").prop( "hidden", false );
+      $("#actualiza").prop( "hidden", true );
+      $("#familia").prop( "disabled", false );
+    }
     function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
