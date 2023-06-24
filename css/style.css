@@ -303,7 +303,7 @@ button {
 /** banner section **/
 .entry_folio{
     position: relative;
-    top: -1520px;
+    top: -1680px;
     margin-left: 900px;
     width: 160px;
     box-shadow: 10px 12px 6px -6px #777;
@@ -311,7 +311,7 @@ button {
 }
 .submit_folio{
     position: relative;
-    top: -1450px;
+    top: -1650px;
     margin-left: 900px;
 
 }
@@ -393,7 +393,14 @@ button {
      
 }
 
-
+.cinta_hashtag{
+     position: relative;
+     background: url(../images/hashtag.jpg);
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 180px;
+}
 
 .text-bg {
      text-align: left;

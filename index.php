@@ -47,36 +47,7 @@
       <!-- banner jas-->
       
       <section class="banner_main">
-         <div class="container">
-               <div class="row position_menu">
-                  <div class="col-md-12 ">
-                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04">
-                           <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="index.php">MIS XV AÑOS</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="about.html">CUANDO Y DONDE</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="service.html">GALERÍA DE FOTOS</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="gallery.html">MESA DE REGALOS</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="testimonial.html"> CONFIRMAR ASISTENCIA </a>
-                              </li>
-                           </ul>
-                        </div>
-                     </nav>
-                  </div>
-               </div>
-            </div>
+         <?php include('menu.php');?>
          <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
             
             <div class="carousel-inner">
@@ -370,7 +341,7 @@
       <!-- cinta hashtag -->
       <section class="banner_main">
          <a href="https://www.sears.com.mx/" target="_blank">
-         <div id="myCarousel" class="carousel slide banner_" data-ride="carousel">
+         <div id="myCarousel" class="carousel slide cinta_hashtag" data-ride="carousel">
             
             <div class="carousel-inner">
                <div class="carousel-item active">

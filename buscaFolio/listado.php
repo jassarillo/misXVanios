@@ -44,7 +44,7 @@ $folioPrueba = $_POST['idFolio'];
       <a href="../index.php" class="form-control btn-success"><i class="bi bi-arrow-left"></i>Regresar</a>
     </div> 
   </div>
-            <h4 class="text-center my-3 pb-3">Listado de invitados por folio Nro. <?php  echo $folioPrueba;?></h4>
+            <h4 class="text-center my-3 pb-3">Listado de invitados por código: <?php  echo $folioPrueba;?></h4>
 
            <input type="hidden" name="idFolio" id="idFolio" value="<?php echo $folioPrueba?>">
 
@@ -54,7 +54,7 @@ $folioPrueba = $_POST['idFolio'];
                     <th scope="col">Fecha</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Familia</th>
-                    <th scope="col">Folio</th>
+                    <!--<th scope="col">Folio</th>-->
                     <th scope="col">
                       <input type="checkbox" id="checkTodos">
                       Confirmar Asistencia
@@ -149,7 +149,7 @@ listPermissions = function(){
                               '<td   >'+ opt.fecha  +'</td> ' +
                               '<td   >'+ opt.nombre +'</td> ' +
                               '<td   >'+ opt.familia +'</td> ' +
-                              '<td   >'+ opt.folio  +'</td> ' +
+                              //'<td   >'+ opt.folio  +'</td> ' +
                               '<td   >'+ inputCheck +'</td> ' +
                           '</tr>');
                   noInt++;
