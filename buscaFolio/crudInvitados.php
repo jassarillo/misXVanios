@@ -45,7 +45,7 @@ ini_set('display_errors', '1');
               </div> 
               <div class="col-md-6"></div>
               <div class="col-md-3">
-                <button type="button" class="btn btn-success" onclick="show_hidde();" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="bi bi-plus"></i>Invitado</button>
+                <button type="button" class="form-control btn-success" onclick="show_hidde();" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="bi bi-plus"></i>Invitado</button>
               </div> 
             </div>
             <h4 class="text-center my-3 pb-3">Listado de invitados </h4>
@@ -55,13 +55,11 @@ ini_set('display_errors', '1');
             <table class="table mb-4" id="invitados_list">
               <thead>
                 <tr>
-                    <th scope="col">Fecha</th>
+                    <!--<th scope="col">Fecha</th>-->
                     <th scope="col">Nombre</th>
                     <th scope="col">Familia</th>
-                    <th scope="col">Folio</th>
-                    <th scope="col">
-                      Acción
-                    </th>
+                    <th scope="col">Acción</th>
+                    <th scope="col">Invitación</th>
                 </tr>
               </thead>
               <tbody>
@@ -237,15 +235,16 @@ listPermissions = function(){
 
                    $('#invitados_list').append(
                           '<tr class="otrasFilas">' +
-                              '<td   >'+ opt.fecha  +'</td> ' +
+                              //'<td   >'+ opt.fecha  +'</td> ' +
                               '<td   >'+ opt.nombre +'</td> ' +
                               '<td   >'+ opt.familia +'</td> ' +
-                              '<td   >'+ opt.folio  +'</td> ' +
+                              //'<td   >'+ opt.folio  +'</td> ' +
                               '<td   >'+ 
                               '<button type="button" id="editar_btn" onclick="editarInvitado('+ opt.id+');" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"><i class="bi bi-pencil"></i></button>' +
 
                               '<button type="button" class="btn btn-danger"onclick="eliminarInvitado('+ opt.id+');" role="button" id="eliminar"><i class="bi bi-trash"></i>  </button>'+
                               '</td> ' +
+                              '<td   >'+ '<a href="../invitation_generate_pdf.php?idFolio=3" class="btn btn-success"><i class="bi bi-file-earmark-pdf-fill"></i></a>' +'</td> ' +
                           '</tr>');
                   noInt++;
               });
@@ -285,13 +284,17 @@ listPermissions = function(){
                 dataType: "json",
                 url: "backend/eliminarInvitado.php?id="+id,
                 success: function (data) {
+                  alert("Datos actualizados!");
+                  listPermissions();
+
                   //console.log(data[0].familia);
-                  $("#familia").val(data[0].familia);
+                  /*$("#familia").val(data[0].familia);
                   $("#nombre_id").val(data[0].nombre);
                   $("#folio").val(data[0].folio);
                   $("#familia").prop( "disabled", true );
                   $("#guardar").prop( "hidden", true );
-                  $("#actualiza").prop( "hidden", false );
+                  $("#actualiza").prop( "hidden", false );*/
+
 
                 },
                 error: function (data) {

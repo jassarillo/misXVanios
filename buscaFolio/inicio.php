@@ -2,6 +2,7 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+set_time_limit(1);
 include 'backend/db.php';
 
 header('Access-Control-Allow-Origin: *');
@@ -13,7 +14,7 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
         //print_r(array_values($resultado));
         echo json_encode($resultado->fetchAll(PDO::FETCH_ASSOC));
     }else{
-        $query="select * from invitados";
+        $query="select id,nombre, estatus, familia from invitados ";
         $resultado=metodoGet($query);
         echo json_encode($resultado->fetchAll());
         //print_r($resultado());
