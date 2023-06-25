@@ -104,7 +104,15 @@ main {
      min-height: 704px;
      padding-top: 80%;
 	}
-
+	.banner_4 {
+     position: relative;
+     background: url(../images/itinerario_mobile.jpg);
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 804px;
+     padding-top: 80%;
+	}
 	.banner_5 {
      position: relative;
      background: url(../images/insta1080x1620.jpg);

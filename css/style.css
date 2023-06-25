@@ -303,7 +303,7 @@ button {
 /** banner section **/
 .entry_folio{
     position: relative;
-    top: -1680px;
+    top: -1480px;
     margin-left: 900px;
     width: 160px;
     box-shadow: 10px 12px 6px -6px #777;
@@ -311,7 +311,7 @@ button {
 }
 .submit_folio{
     position: relative;
-    top: -1650px;
+    top: -1450px;
     margin-left: 900px;
 
 }
@@ -364,7 +364,7 @@ button {
 
 .banner_5 {
      position: relative;
-     background: url(../images/instagram1200x800.jpg);
+     background: url(../images/insta_cinta.jpg);
      background-size: 100% 95%;
      background-position: center;
      background-repeat: no-repeat;

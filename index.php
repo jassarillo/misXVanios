@@ -286,26 +286,7 @@
       </div>
       <!-- end form buscar folio -->
 
-<!-- Banner folio_boleto -->
-     <!-- <div id="about" class="about">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                 <div class="about_img">
-                     <figure><img src="images/07.jpg" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                 
-                  <div class="about_img">
-                     <figure><img class="img_back_folio" src="images/confirmacion.jpg" alt="#"/></figure>
-                  </div>
-               </div>
-            </div>
-         </div>
-          
-      </div>
--->
+
       <!-- end Banner folio_boleto -->
 
 
@@ -339,7 +320,7 @@
       <!-- end banner 5 -->
 
       <!-- cinta hashtag -->
-      <section class="banner_main">
+      <!--<section class="banner_main">
          <a href="https://www.sears.com.mx/" target="_blank">
          <div id="myCarousel" class="carousel slide cinta_hashtag" data-ride="carousel">
             
@@ -347,14 +328,7 @@
                <div class="carousel-item active">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <!--<div class="row">
-                           <div class="col-md-7 offset-md-5">
-                              <div class="text-bg">
-                                 <h1> ¡Mis 15 años! </h1>
-                                 <span>29 de Julio, 2023</span>
-                              </div>
-                           </div>
-                        </div>-->
+                      
                      </div>
                   </div>
                </div>
@@ -364,7 +338,7 @@
             
          </div>
       </a>
-      </section>
+      </section>-->
       <!-- end cinta hashtag -->
 
       <form action="buscaFolio/listado.php" method="post">
@@ -373,18 +347,7 @@
                   </form>
       <!-- end design -->
 
-      <!-- modal -->
-      <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-
-      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            ...
-          </div>
-        </div>
-      </div>
-      <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>-->
-      <!-- modal -->
+    
 
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
