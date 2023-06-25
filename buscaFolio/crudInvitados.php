@@ -244,7 +244,7 @@ listPermissions = function(){
                               '<td   >'+ 
                               '<button type="button" id="editar_btn" onclick="editarInvitado('+ opt.id+');" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"><i class="bi bi-pencil"></i></button>' +
 
-                              '<button type="button" class="btn btn-danger" role="button" id="eliminar"><i class="bi bi-trash"></i>  </button>'+
+                              '<button type="button" class="btn btn-danger"onclick="eliminarInvitado('+ opt.id+');" role="button" id="eliminar"><i class="bi bi-trash"></i>  </button>'+
                               '</td> ' +
                           '</tr>');
                   noInt++;
@@ -275,6 +275,30 @@ listPermissions = function(){
       })
     };  //fin listadoPermissions
 
+    
+
+    function eliminarInvitado(id) {
+      //console.log(id);
+      //$("#id_input").val(id);
+      $.ajax({
+                type: "get",
+                dataType: "json",
+                url: "backend/eliminarInvitado.php?id="+id,
+                success: function (data) {
+                  //console.log(data[0].familia);
+                  $("#familia").val(data[0].familia);
+                  $("#nombre_id").val(data[0].nombre);
+                  $("#folio").val(data[0].folio);
+                  $("#familia").prop( "disabled", true );
+                  $("#guardar").prop( "hidden", true );
+                  $("#actualiza").prop( "hidden", false );
+
+                },
+                error: function (data) {
+                    console.log(data);
+                }
+            });
+    }
 
     function editarInvitado(id) {
       //console.log(id);
