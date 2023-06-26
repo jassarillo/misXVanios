@@ -19,6 +19,8 @@ ini_set('display_errors', '1');
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -48,6 +50,20 @@ ini_set('display_errors', '1');
                 <button type="button" class="form-control btn-success" onclick="show_hidde();" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="bi bi-plus"></i>Invitado</button>
               </div> 
             </div>
+                <div class="row">
+                    <div id="content" class="col-lg-12">
+                        
+                    </div>
+                </div>
+                
+                <!--<div class="row">
+                    <div class="col-lg-12 text-center">
+                        <a href="#" class="btn btn-secondary button">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
+                </div>-->
+    
             <h4 class="text-center my-3 pb-3">Listado de invitados </h4>
 
            <input type="hidden" name="idFolio" id="idFolio" value="">
@@ -125,6 +141,7 @@ ini_set('display_errors', '1');
     </div>
   </div>
 </div>
+
 <!-- Modal Registro Exitoso! -->
 <!--<div class="alert alert-success" role="alert">
   This is a success alert—check it out!
@@ -135,6 +152,8 @@ ini_set('display_errors', '1');
 </html>
 <script type="text/javascript">
 $(document).ready(function() {  //Inicia document ready
+   $('#content').html('<div class="loading"><img src="../images/loader.gif" alt="loading" /><br/>Un momento, por favor...</div>');
+ 
            //console.log('hola mundo!');
             $.ajaxSetup({
                 headers: {
@@ -143,6 +162,7 @@ $(document).ready(function() {  //Inicia document ready
                 }); 
 
   listPermissions();
+
 
 var invitados = new Array();
     $("#checkTodos").change(function () {
@@ -185,22 +205,26 @@ $("#actualiza").click(function() { //Guardar Datos
       $("#formCreate").submit(function(e){
         e.preventDefault();
       });
+
+            $('#content').html('<div class="loading"><img src="../images/loader.gif"/><br/>Un momento, por favor...</div>');
+
             familia = $("#familia").val();
             nombre = $("#nombre_id").val();
             folio = $("#folio").val();
             id_input = $("#id_input").val();
-
+            
             $.ajax({
                 type: "POST",
                 dataType: "json",
                 url: "backend/actualizaInviData.php",
                 data: {"familia": familia, "nombre": nombre, "folio": folio, "id_input":id_input },
                 success: function (data) {
+                  $('#content').fadeIn(1000).html(data);
                   $("#nombre_id").val('');
                    $("#element").val('');
                   //$("#folio").val('');
                   listPermissions();
-                  alert("Datos actualizados!");
+                  //alert("Datos actualizados!");
 
                 },
                 error: function (data) {
@@ -248,6 +272,8 @@ listPermissions = function(){
                           '</tr>');
                   noInt++;
               });
+                 
+                $('#content').fadeIn(1000).html(data);
 
                 $(".invitados").change(function () 
                 {
@@ -279,6 +305,8 @@ listPermissions = function(){
     function eliminarInvitado(id) {
       //console.log(id);
       //$("#id_input").val(id);
+      $('#content').html('<div class="loading"><img src="../images/loader.gif" alt="loading" /><br/>Un momento, por favor...</div>');
+ 
       $.ajax({
                 type: "get",
                 dataType: "json",
@@ -286,7 +314,7 @@ listPermissions = function(){
                 success: function (data) {
                   alert("Datos actualizados!");
                   listPermissions();
-
+                  $('#content').fadeIn(1000).html(data);
                   //console.log(data[0].familia);
                   /*$("#familia").val(data[0].familia);
                   $("#nombre_id").val(data[0].nombre);
@@ -305,6 +333,8 @@ listPermissions = function(){
 
     function editarInvitado(id) {
       //console.log(id);
+      
+
       $("#id_input").val(id);
       $.ajax({
                 type: "get",

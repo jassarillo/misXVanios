@@ -39,6 +39,9 @@ $folioPrueba = $_POST['idFolio'];
       <div class="col col-lg-9 col-xl-7">
         <div class="card rounded-3">
           <div class="card-body p-4">
+            
+                
+                
             <div class="row">
     <div class="col-md-3">
       <a href="../index.php" class="form-control btn-success"><i class="bi bi-arrow-left"></i>Regresar</a>
@@ -47,7 +50,11 @@ $folioPrueba = $_POST['idFolio'];
             <h4 class="text-center my-3 pb-3">Listado de invitados por código: <?php  echo $folioPrueba;?></h4>
 
            <input type="hidden" name="idFolio" id="idFolio" value="<?php echo $folioPrueba?>">
-
+          <div class="row">
+                   <div class="col-md-4"></div> <div id="content" class="col-md-4"><div class="col-md-4"></div>
+                        
+                    </div>
+            </div>
             <table class="table mb-4" id="invitados_list">
               <thead>
                 <tr>
@@ -95,6 +102,9 @@ $folioPrueba = $_POST['idFolio'];
 </html>
 <script type="text/javascript">
 $(document).ready(function() {  //Inicia document ready
+$('#content').html('<div class="loading"><img src="../images/loader.gif" alt="loading" /><br/></div>');
+ 
+
            //console.log('hola mundo!');
             $.ajaxSetup({
                 headers: {
@@ -154,7 +164,7 @@ listPermissions = function(){
                           '</tr>');
                   noInt++;
               });
-
+                $('#content').fadeIn(1000).html(data);
                 $(".invitados").change(function () 
                 {
                   if ($(this).is(':checked')) 
@@ -182,7 +192,8 @@ listPermissions = function(){
 
 
     $("#guardar").click(function() { //Guardar Datos
-                        console.log(invitados);
+                        
+                        $('#content').html('<div class="loading"><img src="../images/loader.gif" alt="loading" /><br/></div>');
                         idFolio = $("#idFolio").val();
                         id_user = $("#id_user").val();
                         
@@ -194,10 +205,10 @@ listPermissions = function(){
 
                             success: function (data) {
 
-                              
+                              $('#content').fadeIn(1000).html(data);
                                 invitados = "";
                                 listPermissions();
-                              alert("Datos actualizados!");
+                              //alert("Datos actualizados!");
                               $(location).prop('href', 'phpqrcode/index.php?idFolio='+idFolio);
 
                             },
