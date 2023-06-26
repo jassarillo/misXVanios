@@ -90,7 +90,7 @@ main {
 	padding: 30px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 450px) {
   .simply-section {
     width: 60px;
   	}

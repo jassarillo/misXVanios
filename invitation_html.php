@@ -113,7 +113,7 @@ error_reporting(E_ALL);
       color: #FF0000;
       font-family: cursive;
       top: 695px;
-      margin-left: <?php if(strlen($invitados_name['familia']) >= 8){ echo "300px"; }else{ echo "318px"; } ?>;
+      margin-left: <?php if(strlen($invitados_name['familia']) <= 8 &&  strlen($invitados_name['familia']) >=14){ echo "420px"; }elseif(strlen($invitados_name['familia']) < 10){ echo "350px"; }else{ echo "150px"; } ?>;
     }
     .codigo_confirm{
       position: absolute;
@@ -225,7 +225,7 @@ $personas = $resultado->fetch();
 ?>
 
   
-  <h3 class="codigo_confirm">Código de confirmación</h3>
+  <h3 class="codigo_confirm">Código de confirmación </h3>
   <button class="btn_code" role="button"><?php echo $idFolio?></button>
 
 
