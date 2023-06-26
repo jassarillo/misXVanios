@@ -34,8 +34,22 @@ error_reporting(E_ALL);
   $googleMaps = "elementos/googleMaps.png";
   $googleMaps64 = "data:image/png;base64," . base64_encode(file_get_contents($googleMaps));
 
-  $img_xv = "images/07.jpg";
-  $img_xv64 = "data:image/jpg;base64," . base64_encode(file_get_contents($img_xv));
+  $img_xv = "images/majo_3d.png";
+  $img_xv64 = "data:image/png;base64," . base64_encode(file_get_contents($img_xv));
+
+  $xv = "images/xv.png";
+  $xv64 = "data:image/png;base64," . base64_encode(file_get_contents($xv));
+
+  $acompaname = "images/acompaname.png";
+  $acompaname64 = "data:image/png;base64," . base64_encode(file_get_contents($acompaname));
+
+  $boton_digital = "images/boton_digital.png";
+  $boton_digital64 = "data:image/png;base64," . base64_encode(file_get_contents($boton_digital));
+
+  $haz_click = "images/haz_click.png";
+  $haz_click64 = "data:image/png;base64," . base64_encode(file_get_contents($haz_click));
+
+
 ?>
   <style type="text/css">
     body {
@@ -86,9 +100,8 @@ error_reporting(E_ALL);
     }
     .acompaname{
       position: absolute;
-      color: black;
-      top:650px;
-      margin-left: 210px;
+      top:670px;
+      margin-left: 120px;
     }
     .nombre_desc{
       position: absolute;
@@ -100,7 +113,7 @@ error_reporting(E_ALL);
       color: #FF0000;
       font-family: cursive;
       top: 695px;
-      margin-left: <?php if(strlen($invitados_name['familia']) >= 8){ echo "230px"; }else{ echo "278px"; } ?>;
+      margin-left: <?php if(strlen($invitados_name['familia']) >= 8){ echo "300px"; }else{ echo "318px"; } ?>;
     }
     .codigo_confirm{
       position: absolute;
@@ -109,17 +122,17 @@ error_reporting(E_ALL);
       margin-left: 270px;
     }
     .img_xv{
-      width: 240px;
-      height: 359px;
+      width: 340px;
+      height: 459px;
       position: absolute;
-      top: 294px;
-      margin-left: 245px;
+      top: 191px;
+      margin-left: 220px;
     
     }
     .btn_code{
     position: absolute;
     top: 785px;
-    margin-left: 315px;
+    margin-left: 310px;
 
 
     background: gray;
@@ -134,7 +147,7 @@ error_reporting(E_ALL);
     line-height: 24px;
     opacity: 1;
     outline: 0 solid transparent;
-    padding: 8px 18px;
+    padding: 8px 38px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -143,8 +156,18 @@ error_reporting(E_ALL);
     border: 0;
 
     }
+  .btn_digital{
+    position: absolute;
+    top: 835px;
+    margin-left: 165px;
+  }
+  .haz_click{
+    position: absolute;
+    top: 925px;
+    margin-left: 285px;
+  }
 
-
+/*
 .myButton {
   position: absolute;
   top: 835px;
@@ -172,7 +195,7 @@ error_reporting(E_ALL);
 .myButton:active {
   position:relative;
   top:1px;
-}
+}*/
 
 
   </style>
@@ -201,11 +224,10 @@ $resultado = $db->query("SELECT count(id) as count FROM invitados where estatus 
 $personas = $resultado->fetch(); 
 ?>
 
-  <h1 class="acompaname">Acompañame a Fesejar:</h1>
   
   <h3 class="codigo_confirm">Código de confirmación</h3>
   <button class="btn_code" role="button"><?php echo $idFolio?></button>
-  <a href="www.google.com" class="myButton">INVITACIÓN DIGITAL</a>
+
 
   <div>
       <img src="<?php echo $flores64 ?>" class="flores" />
@@ -214,7 +236,7 @@ $personas = $resultado->fetch();
       <img src="<?php echo $majo64 ?>" class="majo" />
   </div>
   <div>
-      <img src="<?php echo $majo64 ?>" class="mis_xv" />
+      <img src="<?php echo $xv64 ?>" class="mis_xv" />
   </div>
   <div>
     <img src="<?php echo $cinta64 ?>" class="cinta" />
@@ -222,8 +244,15 @@ $personas = $resultado->fetch();
   <div>
     <img src="<?php echo $img_xv64 ?>" class="img_xv" />
   </div>
-  
-
+  <div>
+      <img src="<?php echo $acompaname64 ?>" class="acompaname" />
+  </div>
+  <div>
+      <a href="https://www.misxvmajo.systemar.com.mx/index.php"><img src="<?php echo $boton_digital64 ?>" class="btn_digital" /></a>
+  </div>
+  <div>
+      <img src="<?php echo $haz_click64 ?>" class="haz_click" />
+  </div>
 <h1 class="familia_name" align="text-center"><?php echo $invitados_name['familia'];?></h1>
 
 
