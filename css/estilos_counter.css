@@ -136,7 +136,7 @@ main {
 
 	.entry_folio{
     position: relative;
-    top: -1200px;
+    top: -1135px;
     margin-left: 120px;
     width: 160px;
     box-shadow: 10px 12px 6px -6px #777;
@@ -144,7 +144,7 @@ main {
 }
 .submit_folio{
     position: relative;
-    top: -1140px;
+    top: -1125px;
     margin-left: 120px;
 
 }

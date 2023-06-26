@@ -113,7 +113,13 @@ error_reporting(E_ALL);
       color: #FF0000;
       font-family: cursive;
       top: 695px;
-      margin-left: <?php if(strlen($invitados_name['familia']) <= 8 &&  strlen($invitados_name['familia']) >=14){ echo "420px"; }elseif(strlen($invitados_name['familia']) < 10){ echo "350px"; }else{ echo "150px"; } ?>;
+      margin-left: <?php 
+      if(strlen($invitados_name['familia']) <= 8 &&  strlen($invitados_name['familia']) >=14)
+      { echo "180px"; 
+      }elseif(strlen($invitados_name['familia']) < 10){ 
+        echo "280px"; 
+      }else{ 
+        echo "150px"; } ?>;
     }
     .codigo_confirm{
       position: absolute;
@@ -253,7 +259,7 @@ $personas = $resultado->fetch();
   <div>
       <img src="<?php echo $haz_click64 ?>" class="haz_click" />
   </div>
-<h1 class="familia_name" align="text-center"><?php echo $invitados_name['familia'];?></h1>
+<h1 class="familia_name" align="text-center"><?php echo "Familia: " . $invitados_name['familia'];?></h1>
 
 
 </body>

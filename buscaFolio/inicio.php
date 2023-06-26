@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
         //print_r(array_values($resultado));
         echo json_encode($resultado->fetchAll(PDO::FETCH_ASSOC));
     }else{
-        $query="select id,nombre, estatus, familia from invitados ";
+        $query="select id,nombre, estatus, familia, folio from invitados ";
         $resultado=metodoGet($query);
         echo json_encode($resultado->fetchAll());
         //print_r($resultado());

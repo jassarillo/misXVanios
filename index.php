@@ -242,14 +242,27 @@
                <div class="carousel-item active">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <!--<div class="row">
-                           <div class="col-md-7 offset-md-5">
-                              <div class="text-bg">
-                                 <h1> ¡Mis 15 años! </h1>
-                                 <span>29 de Julio, 2023</span>
-                              </div>
-                           </div>
-                        </div>-->
+                       
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+      </a>
+      </section>
+      <!-- end mesa regalos -->
+
+<!-- mesa regalos 2 -->
+      <section class="banner_main">
+         <a href="https://www.liverpool.com.mx/" target="_blank">
+         <div id="myCarousel" class="carousel slide banner_liverpool" data-ride="carousel">
+            
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                       
                      </div>
                   </div>
                </div>
@@ -260,7 +273,7 @@
          </div>
       </a>
       </section>
-      <!-- end mesa regalos -->
+      <!-- end mesa regalos 2 -->
 
        
       <!-- form buscar folio -->

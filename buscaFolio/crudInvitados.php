@@ -244,7 +244,7 @@ listPermissions = function(){
 
                               '<button type="button" class="btn btn-danger"onclick="eliminarInvitado('+ opt.id+');" role="button" id="eliminar"><i class="bi bi-trash"></i>  </button>'+
                               '</td> ' +
-                              '<td   >'+ '<a href="../invitation_generate_pdf.php?idFolio=3" class="btn btn-success"><i class="bi bi-file-earmark-pdf-fill"></i></a>' +'</td> ' +
+                              '<td   >'+ '<a href="../invitation_generate_pdf.php?idFolio='+ opt.folio +'" class="btn btn-success"><i class="bi bi-file-earmark-pdf-fill"></i></a>' +'</td> ' +
                           '</tr>');
                   noInt++;
               });

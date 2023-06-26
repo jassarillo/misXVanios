@@ -364,7 +364,7 @@ button {
 
 .banner_5 {
      position: relative;
-     background: url(../images/insta_cinta.jpg);
+     background: url(../images/insta_cinta.png);
      background-size: 100% 95%;
      background-position: center;
      background-repeat: no-repeat;
@@ -374,7 +374,16 @@ button {
 
 .banner_6 {
      position: relative;
-     background: url(../images/regalos_liverpool_sears.jpg);
+     background: url(../images/sears.png);
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 180px;
+     
+}
+.banner_liverpool {
+     position: relative;
+     background: url(../images/liverpool.png);
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
