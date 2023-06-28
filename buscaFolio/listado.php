@@ -76,7 +76,7 @@ $folioPrueba = $_POST['idFolio'];
             </table>
             <div class="row">
               <div class="col-md-6">
-                <button type="button" class="form-control btn-success" role="button" id="guardar">Guardar y Generar Boleto</button>
+                <button type="button" class="form-control btn-default" role="button" id="guardar" disabled>Guardar y Generar Boleto</button>
                 <!--<button class="btn-primary btn-lg" name="guardar_list">Guardar</button>-->
               </div>
               <div class="col-md-3"></div>
@@ -180,6 +180,14 @@ listPermissions = function(){
                     invitados.splice($.inArray($(this).val(), invitados), 1);
                   }
                   console.log(invitados);
+                  if(invitados.length == 0){
+                    $( "#guardar" ).prop( "disabled", true );
+                    $( "#guardar" ).removeClass( "btn-success" ).addClass( "btn-default" );
+
+                  }else{
+                    $( "#guardar" ).prop( "disabled", false );
+                    $( "#guardar" ).removeClass( "btn-default" ).addClass( "btn-success" );
+                  }
               });
 
           },
