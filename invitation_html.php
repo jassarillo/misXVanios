@@ -51,6 +51,32 @@ error_reporting(E_ALL);
 
 
 ?>
+
+
+<?php 
+
+$opciones = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"];
+try {
+    $db = new PDO('mysql:host=143.198.231.211;dbname=xv', 'xv', 'UYUhYCwHo4OPHnILNDxP', $opciones);
+    //$db = new PDO('mysql:host=localhost;dbname=xv_anios', 'root', 'root', $opciones);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo 'Falló la conexión: ' . $e->getMessage();
+}
+
+
+$registros = $db->query("SELECT familia FROM invitados where  folio ='" . $idFolio . "' limit 1");
+$invitados_name = $registros->fetch(); 
+    
+
+$resultado = $db->query("SELECT count(id) as count FROM invitados where estatus = 1 and folio ='" . $idFolio . "'");
+$personas = $resultado->fetch(); 
+?>
+
+
+
+
+
   <style type="text/css">
     body {
      background-image: url("<?php echo $imagenFondo;?>");
@@ -113,13 +139,7 @@ error_reporting(E_ALL);
       color: #FF0000;
       font-family: cursive;
       top: 695px;
-      margin-left: <?php 
-      if(strlen($invitados_name['familia']) <= 8 &&  strlen($invitados_name['familia']) >=14)
-      { echo "180px"; 
-      }elseif(strlen($invitados_name['familia']) < 10){ 
-        echo "280px"; 
-      }else{ 
-        echo "150px"; } ?>;
+      margin-left: <?php if(strlen($invitados_name['familia']) > 12){ echo "140px"; $a="12"; }else{ echo "250px"; $a="20"; } ?>;
     }
     .codigo_confirm{
       position: absolute;
@@ -210,28 +230,12 @@ error_reporting(E_ALL);
 
 <body>
 
-<?php 
 
-$opciones = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"];
-try {
-    $db = new PDO('mysql:host=143.198.231.211;dbname=xv', 'xv', 'UYUhYCwHo4OPHnILNDxP', $opciones);
-    //$db = new PDO('mysql:host=localhost;dbname=xv_anios', 'root', 'root', $opciones);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    echo 'Falló la conexión: ' . $e->getMessage();
-}
-
-
-$registros = $db->query("SELECT familia FROM invitados where  folio ='" . $idFolio . "' limit 1");
-$invitados_name = $registros->fetch(); 
-    
-
-$resultado = $db->query("SELECT count(id) as count FROM invitados where estatus = 1 and folio ='" . $idFolio . "'");
-$personas = $resultado->fetch(); 
-?>
 
   
-  <h3 class="codigo_confirm">Código de confirmación </h3>
+  <h3 class="codigo_confirm">Código de confirmación 
+    <?php //echo strlen($invitados_name['familia'])  ." - " . $a; ?>
+  </h3>
   <button class="btn_code" role="button"><?php echo $idFolio?></button>
 
 
@@ -259,7 +263,7 @@ $personas = $resultado->fetch();
   <div>
       <img src="<?php echo $haz_click64 ?>" class="haz_click" />
   </div>
-<h1 class="familia_name" align="text-center"><?php echo "Familia: " . $invitados_name['familia'];?></h1>
+<h2 class="familia_name" align="text-center"><?php echo "FAMILIA: " . strtoupper($invitados_name['familia']);?></h2>
 
 
 </body>
