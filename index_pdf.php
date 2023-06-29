@@ -107,7 +107,7 @@ error_reporting(E_ALL);
       position: absolute;
       color: #FF0000;
       top: 390px;
-      margin-left: 238px;
+      margin-left: 210px;
     }
     .nombre_desc{
       position: absolute;
@@ -118,15 +118,21 @@ error_reporting(E_ALL);
     .invitados{
       position: absolute;
       color: #FF0000;
-      top: 650px;
+      top: 635px;
       margin-left: 240px;
       
     }
     .nro_desc{
       position: absolute;
       color: #FF0000;
-      top: 650px;
+      top: 635px;
       margin-left: 430px;
+    }
+    .vestimenta{
+      position: absolute;
+      color: #800040;
+      top: 655px;
+      margin-left: 100px;
     }
     .linea_roja{
       width: 250px;
@@ -183,10 +189,12 @@ $resultado = $db->query("SELECT count(id) as count FROM invitados where estatus 
 $personas = $resultado->fetch(); 
 ?>
 
-  <h2 class="fam_nombre">Familia:</h2>
+  <h2 class="fam_nombre">FAMILIA:</h2>
   <h2 class="nombre_desc"><?php echo strtoupper($invitados_name['familia']);?></h2>
-  <h2 class="invitados">Nro. de Invitados:</h2>
-  <h2 class="nro_desc"><?php echo $personas['count'];?></h2>
+  <h3 class="invitados">No. de Invitados:</h3>
+  <h3 class="nro_desc"><?php echo $personas['count'];?></h3>
+  <h2 class="vestimenta">Código de Etiqueta Formal (No Color Rojo, Ni Vino)</h2>
+ 
 
 
   <div>
