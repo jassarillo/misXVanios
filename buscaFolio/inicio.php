@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
         $query="select id,nombre, estatus, familia, folio from invitados order by familia DESC  limit ". $_GET['inicio'].",". 
         $_GET['fin']. "";
         $resultado=metodoGet($query);
-
+        echo $query;
         $query_count="select count(id) as count_id from invitados ";
         $resultado_count=metodoGet($query_count);
        
