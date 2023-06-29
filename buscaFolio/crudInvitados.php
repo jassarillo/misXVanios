@@ -82,14 +82,12 @@ ini_set('display_errors', '1');
                     
               </tbody>
             </table>
+
             <div class="row">
-              <div class="col-md-6">
-                <!--<button type="button" class="form-control btn-success" role="button" id="guardar">Guardar y Generar Boleto</button>-->
-                <!--<button class="btn-primary btn-lg" name="guardar_list">Guardar</button>-->
+              <div class="col-md-12">
+               <div id="list_href"></div>
               </div>
-              <div class="col-md-3"></div>
-              <div class="col-md-3">
-              </div>
+              
             </div>
           </div>
         </div>
@@ -162,6 +160,7 @@ $(document).ready(function() {  //Inicia document ready
                 }); 
 
   listPermissions();
+
 
 
 var invitados = new Array();
@@ -237,8 +236,16 @@ $("#actualiza").click(function() { //Guardar Datos
  
 });  //Fin Document ready
 
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
 
-listPermissions = function(){
+setTimeout(listPermissions = function(){
+  var inicio = getParameterByName('inicio');
+  var fin = getParameterByName('fin');
       idFolio = $("#idFolio").val();
       //idFolio = getParameterByName('idFolio');
       invitados =[];
@@ -247,12 +254,12 @@ listPermissions = function(){
       $.ajax({
           type: "GET",        
           dataType: "json",
-          url: "inicio.php",
+          url: "inicio.php?inicio="+inicio+'&fin='+fin,
           success: function (data)
           {
-              //console.log(data);
+              console.log(data);
                noInt =1;
-                $.each(data, function (idx, opt) {
+                $.each(data.resultado, function (idx, opt) {
                   //console.log(opt.estatus); 
                
                    
@@ -275,8 +282,7 @@ listPermissions = function(){
                  
                 $('#content').fadeIn(1000).html(data);
 
-                $(".invitados").change(function () 
-                {
+                $(".invitados").change(function(){
                   if ($(this).is(':checked')) 
                   {
                       //console.log($(this).val());
@@ -290,7 +296,26 @@ listPermissions = function(){
                     invitados.splice($.inArray($(this).val(), invitados), 1);
                   }
                   console.log(invitados);
-              });
+                });
+
+                  //paginate ***
+                  console.log(data.resultado_count[0].count_id);
+                  //var registros = data; 
+                  var totalRegistros = data.resultado_count[0].count_id;
+                  var enlacesGenerados = 0;
+                  var enlacesPorGrupo = 5;
+                  var enlace ='';
+
+                  for (var i = 0; i < totalRegistros; i += enlacesPorGrupo) {
+                    var inicio = i;
+                    var fin = Math.min(i + enlacesPorGrupo - 1, totalRegistros - 1);
+                     enlace += '<a href="crudInvitados.php?inicio=' + inicio + '&fin=' + fin + '" class="btn btn-primary">' + i + '</a>';
+                    enlacesGenerados++;
+                  }
+                  console.log(enlace);
+                  $('#list_href').append(
+                    enlace
+                    );
 
           },
           error: function (data)
@@ -298,8 +323,9 @@ listPermissions = function(){
                   alert( data.responseText);
           }
       })
-    };  //fin listadoPermissions
+    },8000);  //fin listadoPermissions
 
+//setTimeout(listPermissions(), 3000);
     
 
     function eliminarInvitado(id) {

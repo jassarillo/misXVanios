@@ -14,12 +14,22 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
         //print_r(array_values($resultado));
         echo json_encode($resultado->fetchAll(PDO::FETCH_ASSOC));
     }else{
-        $query="select id,nombre, estatus, familia, folio from invitados ";
+        $query="select id,nombre, estatus, familia, folio from invitados order by familia DESC  limit ". $_GET['inicio'].",". 
+        $_GET['fin']. "";
         $resultado=metodoGet($query);
-        echo json_encode($resultado->fetchAll());
-        //print_r($resultado());
-        //print_r(array_values($resultado));
-        //echo array_values(json_decode($resultado->fetchAll())); 
+
+        $query_count="select count(id) as count_id from invitados ";
+        $resultado_count=metodoGet($query_count);
+       
+
+
+        $datos = array(
+          'resultado' => $resultado->fetchAll(),
+          'resultado_count' => $resultado_count->fetchAll()
+        );
+
+        echo json_encode($datos);
+     
     }
     header("HTTP/1.1 200 OK");
     exit();

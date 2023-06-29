@@ -184,7 +184,7 @@ $personas = $resultado->fetch();
 ?>
 
   <h2 class="fam_nombre">Familia:</h2>
-  <h2 class="nombre_desc"><?php echo $invitados_name['familia'];?></h2>
+  <h2 class="nombre_desc"><?php echo strtoupper($invitados_name['familia']);?></h2>
   <h2 class="invitados">Nro. de Invitados:</h2>
   <h2 class="nro_desc"><?php echo $personas['count'];?></h2>
 

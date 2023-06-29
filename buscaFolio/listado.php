@@ -179,7 +179,8 @@ listPermissions = function(){
                   {
                     invitados.splice($.inArray($(this).val(), invitados), 1);
                   }
-                  console.log(invitados);
+                  //console.log(invitados);
+                  //Validacion invitados
                   if(invitados.length == 0){
                     $( "#guardar" ).prop( "disabled", true );
                     $( "#guardar" ).removeClass( "btn-success" ).addClass( "btn-default" );
@@ -188,8 +189,9 @@ listPermissions = function(){
                     $( "#guardar" ).prop( "disabled", false );
                     $( "#guardar" ).removeClass( "btn-default" ).addClass( "btn-success" );
                   }
-              });
+                });
 
+              
           },
           error: function (data)
           {
@@ -210,7 +212,6 @@ listPermissions = function(){
                             dataType: "json",
                             url: "backend/updateAsistencia.php",
                             data: {"invitados": invitados, "idFolio": idFolio },
-
                             success: function (data) {
 
                               $('#content').fadeIn(1000).html(data);
