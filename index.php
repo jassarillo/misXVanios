@@ -235,7 +235,7 @@
 
 <!-- mesa regalos -->
       <section class="banner_main">
-         <a href="https://www.sears.com.mx/" target="_blank">
+         <a href="https://www.sears.com.mx/Mesa-de-Regalos/76678/te-invito-a-mi-xv-anos-mariajose" target="_blank">
          <div id="myCarousel" class="carousel slide banner_6" data-ride="carousel">
             
             <div class="carousel-inner">
@@ -255,7 +255,7 @@
 
 <!-- mesa regalos 2 -->
       <section class="banner_main">
-         <a href="https://www.liverpool.com.mx/" target="_blank">
+         <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51230051" target="_blank">
          <div id="myCarousel" class="carousel slide banner_liverpool" data-ride="carousel">
             
             <div class="carousel-inner">
