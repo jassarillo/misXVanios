@@ -267,7 +267,7 @@ setTimeout(listPermissions = function(){
           url: "inicio.php?inicio="+inicio+'&fin='+fin,
           success: function (data)
           {
-              console.log(data);
+              //console.log(data);
                noInt =1;
                 $.each(data.resultado, function (idx, opt) {
                   //console.log(opt.estatus); 
