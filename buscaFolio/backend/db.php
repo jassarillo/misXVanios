@@ -3,7 +3,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 //("localhost", "root", "root", "xv_anios");
-/*$pdo=null;
+$pdo=null;
+/*
 $host="localhost";
 $user="root";
 $password="root";
@@ -18,6 +19,7 @@ function conectar(){
     try{
         $GLOBALS['pdo']=new PDO("mysql:host=".$GLOBALS['host'].";dbname=".$GLOBALS['bd']."", $GLOBALS['user'], $GLOBALS['password']);
         $GLOBALS['pdo']->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $GLOBALS['pdo']->exec("SET NAMES 'utf8'"); 
     }catch (PDOException $e){
         print "Error!: No se pudo conectar a la bd ".$bd."<br/>";
         print "\nError!: ".$e."<br/>";

@@ -15,10 +15,6 @@ ini_set('display_errors', '1');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis XV</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
-  
-<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -106,8 +102,6 @@ ini_set('display_errors', '1');
                 </thead>
             </table>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -157,9 +151,6 @@ ini_set('display_errors', '1');
     </div>
   </div>
 </div>
-<link rel="stylesheet" href="/DataTables/datatables.css" />
- 
-<script src="/DataTables/datatables.js"></script>
 <!-- Modal Registro Exitoso! -->
 <!--<div class="alert alert-success" role="alert">
   This is a success alert—check it out!
@@ -181,13 +172,6 @@ $(document).ready(function() {  //Inicia document ready
 
   listPermissions();
 
-$('#example').DataTable({
-    ajax: '../data/2500.txt',
-    deferRender: true,
-    scrollCollapse: true,
-    scroller: true,
-    scrollY: 200
-});
 
 var invitados = new Array();
     $("#checkTodos").change(function () {
@@ -329,7 +313,7 @@ setTimeout(listPermissions = function(){
                   //var registros = data; 
                   var totalRegistros = data.resultado_count[0].count_id;
                   var enlacesGenerados = 0;
-                  var enlacesPorGrupo = 5;
+                  var enlacesPorGrupo = 50;
                   var enlace ='';
 
                   for (var i = 0; i < totalRegistros; i += enlacesPorGrupo) {
@@ -338,10 +322,11 @@ setTimeout(listPermissions = function(){
                      enlace += '<a href="crudInvitados.php?inicio=' + inicio + '&fin=' + fin + '" class="btn btn-primary">' + i + '</a>';
                     enlacesGenerados++;
                   }
+                  /* paginate
                   console.log(enlace);
                   $('#list_href').append(
                     enlace
-                    );
+                    );*/
 
           },
           error: function (data)
@@ -367,14 +352,7 @@ setTimeout(listPermissions = function(){
                   alert("Datos actualizados!");
                   listPermissions();
                   $('#content').fadeIn(1000).html(data);
-                  //console.log(data[0].familia);
-                  /*$("#familia").val(data[0].familia);
-                  $("#nombre_id").val(data[0].nombre);
-                  $("#folio").val(data[0].folio);
-                  $("#familia").prop( "disabled", true );
-                  $("#guardar").prop( "hidden", true );
-                  $("#actualiza").prop( "hidden", false );*/
-
+                 
 
                 },
                 error: function (data) {
