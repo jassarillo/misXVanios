@@ -105,22 +105,26 @@ error_reporting(E_ALL);
     }
     .fam_nombre{
       position: absolute;
+      color: #FF0000;
       top: 390px;
       margin-left: 238px;
     }
     .nombre_desc{
       position: absolute;
+      color: #FF0000;
       top: 390px;
       margin-left: 330px;
     }
     .invitados{
       position: absolute;
+      color: #FF0000;
       top: 650px;
       margin-left: 240px;
       
     }
     .nro_desc{
       position: absolute;
+      color: #FF0000;
       top: 650px;
       margin-left: 430px;
     }
@@ -180,8 +184,8 @@ $personas = $resultado->fetch();
 ?>
 
   <h2 class="fam_nombre">Familia:</h2>
+  <h2 class="nombre_desc"><?php echo $invitados_name['familia'];?></h2>
   <h2 class="invitados">Nro. de Invitados:</h2>
-  <h2 class="nombre_desc"><?php echo $invitados_name['nombre'];?></h2>
   <h2 class="nro_desc"><?php echo $personas['count'];?></h2>
 
 
