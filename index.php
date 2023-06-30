@@ -103,7 +103,10 @@
                               <!--<iframe  src="https://youtu.be/AwBIFUbM3gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%" height="500px%">
                                  </iframe>-->
 
+                                 <!--
                                  <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" type="text/html" src="https://www.youtube.com/embed/AwBIFUbM3gQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com" width="100%" height="500px%"><div><small><a href="https://youtubeembedcode.com/en/">https://youtubeembedcode.com/en/</a></small></div><div><small><a href="https://xn--snabbln5000-28a.com/lana-3000/">låna 3000 utan uc</a></small></div><div><small><a href="https://youtubeembedcode.com/en/">youtubeembedcode en</a></small></div><div><small><a href="https://xn--sms-ln-direkt-utbetalning-gfc.se/">smslån direkt utbetalning</a></small></div></iframe>
+                                 -->
+                                 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/8eTpyedNrPM?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/pl/">youtubeembedcode.com/pl/</a></small></div><div><small><a href="https://laddbox.io/">https://laddbox.io/</a></small></div></iframe>
                            </div>
                         </div>
                      </div>
@@ -355,7 +358,7 @@
       <!-- end cinta hashtag -->
 
       <form action="buscaFolio/listado.php" method="post">
-                     <input class="form-control entry_folio" placeholder="Ej. LB15133" id="idFolio" name="idFolio" type="text" name="folio">
+                     <input class="form-control entry_folio" placeholder="Ej. LB15133" id="idFolio" name="idFolio" type="text" name="folio" required>
                      <button type="submit" class="btn btn-lg btn-danger submit_folio">Buscar</button>
                   </form>
       <!-- end design -->

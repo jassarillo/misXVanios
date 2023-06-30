@@ -218,11 +218,13 @@ $personas = $resultado->fetch();
   <div>
     <img src="<?php echo $lineas64 ?>" class="linea_roja" />
   </div>
+    <div>
+      <!--<img src="<?php echo $googleMaps64 ?>" class="googleMaps" />-->
+      <a href="https://goo.gl/maps/geoVdnfKQj8HjDXa8" ><img src="<?php echo $googleMaps64 ?>" class="googleMaps"  /></a>
+    </div>
+
   <div>
-    <img src="<?php echo $googleMaps64 ?>" class="googleMaps" />
-  </div>
-  <div>
-    <img src="<?php echo $googleMaps64 ?>" class="googleMaps_2" />
+    <a href="https://goo.gl/maps/P9JZtvnQUb2vmzEs5"><img src="<?php echo $googleMaps64 ?>" class="googleMaps_2" /></a>
   </div>
   <div>
     <img src="<?php echo $qrcode64 ?>" class="qrcode" />
