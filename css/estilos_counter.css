@@ -78,7 +78,6 @@ main {
 
 .simply-section {
 	background: transparent;
-
 	width: 150%;
 	height: 120px;
 	margin: 0 15px;
@@ -106,7 +105,8 @@ main {
 	}
 	.banner_4 {
      position: relative;
-     background: url(../images/itinerario_mobile.jpg);
+     /*background: url(../images/itinerario_mobile.jpg);*/
+     background: url(../images/itinerarioMovil.jpg);
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;

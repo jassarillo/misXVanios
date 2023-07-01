@@ -3,7 +3,7 @@ error_reporting(0);
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 //var_dump($_REQUEST);
-$folioPrueba = $_POST['idFolio'];
+$folioPrueba = $_REQUEST['idFolio'];
 
 
 ?>
@@ -76,7 +76,7 @@ $folioPrueba = $_POST['idFolio'];
             </table>
             <div class="row">
               <div class="col-md-6">
-                <button type="button" class="form-control btn-default" role="button" id="guardar" disabled>Guardar y Generar Boleto</button>
+                <button type="button" class="form-control btn-success" role="button" id="guardar" >Guardar y Generar Boleto</button>
                 <!--<button class="btn-primary btn-lg" name="guardar_list">Guardar</button>-->
               </div>
               <div class="col-md-3"></div>
@@ -170,6 +170,7 @@ listPermissions = function(){
                 if(cuenta_estatus >= 1){
                   console.log("bloquear_btn");
                   $( ".invitados" ).prop( "disabled", true );
+                  $( "#checkTodos" ).prop( "disabled", true );
                 }else{
                   console.log("no bloquear");
                 }
