@@ -163,6 +163,22 @@ error_reporting(E_ALL);
       margin-left: 286px;
       border-radius: 6px, 6px, 6px, 6px;
     }
+    .div_iglesia{
+      position: absolute;
+      border-color: red;
+      width: 530px;
+      height: 150px;
+      top: 650px;
+      margin-left: 380px;
+    }
+    .div_salon{
+      position: absolute;
+      border-color: red;
+      width: 530px;
+      height: 150px;
+      top: 800px;
+      margin-left: 380px;
+    }
   </style>
 
 </head>
@@ -229,7 +245,8 @@ $personas = $resultado->fetch();
   <div>
     <img src="<?php echo $qrcode64 ?>" class="qrcode" />
   </div>
-  
+  <a href="https://goo.gl/maps/geoVdnfKQj8HjDXa8"><div class="div_iglesia"></div></a>
+  <a href="https://goo.gl/maps/P9JZtvnQUb2vmzEs5"><div class="div_salon"></div></a>
 
 
 

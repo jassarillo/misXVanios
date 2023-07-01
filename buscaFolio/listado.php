@@ -140,19 +140,21 @@ listPermissions = function(){
           {
               //console.log(data);
                noInt =1;
+               cuenta_estatus=0;
                 $.each(data, function (idx, opt) {
                   //console.log(opt.estatus); 
                
                     if(opt.estatus == 1)
-                                  { 
-                                      inputCheck ='<input type="checkbox"checked class="invitados" value=' + opt.id + ' >'; 
-                                              invitados.push(opt.id+"");
-                                              //console.log(invitados);
-                                  }
-                                  else
-                                  {
-                                      inputCheck ='<input type="checkbox" class="invitados" value=' + opt.id + '>'; 
-                                  }
+                    {
+                        cuenta_estatus++;
+                        inputCheck ='<input type="checkbox"checked class="invitados" value=' + opt.id + ' >'; 
+                                invitados.push(opt.id+"");
+                                //console.log(invitados);
+                    }
+                    else
+                    {
+                        inputCheck ='<input type="checkbox" class="invitados" value=' + opt.id + '>'; 
+                    }
 
                    $('#invitados_list').append(
                           '<tr class="otrasFilas">' +
@@ -164,6 +166,14 @@ listPermissions = function(){
                           '</tr>');
                   noInt++;
               });
+
+                if(cuenta_estatus >= 1){
+                  console.log("bloquear_btn");
+                  $( ".invitados" ).prop( "disabled", true );
+                }else{
+                  console.log("no bloquear");
+                }
+
                 $('#content').fadeIn(1000).html(data);
                 $(".invitados").change(function () 
                 {
