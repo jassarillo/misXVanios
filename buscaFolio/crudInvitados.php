@@ -70,7 +70,7 @@ ini_set('display_errors', '1');
             <table class="table mb-4" id="invitados_list">
               <thead>
                 <tr>
-                    <!--<th scope="col">Fecha</th>-->
+                    <th scope="col">Asiste</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Familia</th>
                     <th scope="col">Acción</th>
@@ -259,12 +259,22 @@ setTimeout(listPermissions = function(){
                noInt =1;
                 $.each(data.resultado, function (idx, opt) {
                   //console.log(opt.estatus); 
-               
+               if(opt.estatus == 1)
+                    {
+                        
+                        inputCheck ='<button type="button" class="btn btn-success"role="button" id="eliminar"><i class="bi bi-check"></i> </button>';
+                            
+                    }
+                    else
+                    {
+                        inputCheck =''; 
+                        //inputCheck ='<input type="checkbox" class="invitados" value=' + opt.id + ' disabled >'; 
+                    }
                    
 
                    $('#invitados_list').append(
                           '<tr class="otrasFilas">' +
-                              //'<td   >'+ opt.fecha  +'</td> ' +
+                              '<td   >'+ inputCheck  +'</td> ' +
                               '<td   >'+ opt.nombre +'</td> ' +
                               '<td   >'+ opt.familia +'</td> ' +
                               //'<td   >'+ opt.folio  +'</td> ' +
