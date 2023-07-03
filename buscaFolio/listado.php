@@ -138,7 +138,10 @@ listPermissions = function(){
           url: "inicio.php?idFolio="+idFolio,
           success: function (data)
           {
-              //console.log(data);
+            if(data.length ==0 ){
+              alert('Favor validar el código: ' + idFolio + ' e intetar nuevamente');
+            }else{
+              console.log(data);
                noInt =1;
                cuenta_estatus=0;
                 $.each(data, function (idx, opt) {
@@ -202,7 +205,7 @@ listPermissions = function(){
                   }
                 });
 
-              
+              }//fin else length
           },
           error: function (data)
           {
