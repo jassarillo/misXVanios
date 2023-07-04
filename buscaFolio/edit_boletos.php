@@ -44,7 +44,7 @@ $folioPrueba = $_REQUEST['idFolio'];
                 
             <div class="row">
     <div class="col-md-3">
-      <a href="../index.php" class="form-control btn-success"><i class="bi bi-arrow-left"></i>Regresar</a>
+      <a href="../buscaFolio/crudInvitados.php" class="form-control btn-success"><i class="bi bi-arrow-left"></i>Regresar</a>
     </div> 
   </div>
             <h4 class="text-center my-3 pb-3">Listado de invitados por código: <?php  echo $folioPrueba;?></h4>

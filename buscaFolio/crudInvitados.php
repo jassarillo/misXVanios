@@ -75,6 +75,7 @@ ini_set('display_errors', '1');
                     <th scope="col">Familia</th>
                     <th scope="col">Acción</th>
                     <th scope="col">Invitación</th>
+                    <th scope="col">Confirmar </th>
                 </tr>
               </thead>
               <tbody>
@@ -284,6 +285,7 @@ setTimeout(listPermissions = function(){
                               '<button type="button" class="btn btn-danger"onclick="eliminarInvitado('+ opt.id+');" role="button" id="eliminar"><i class="bi bi-trash"></i>  </button>'+
                               '</td> ' +
                               '<td   >'+ '<a href="../invitation_generate_pdf.php?idFolio='+ opt.folio +'" class="btn btn-success"><i class="bi bi-file-earmark-pdf-fill"></i></a>' +'</td> ' +
+                              '<td   >'+ '<a href="../buscaFolio/edit_boletos.php?idFolio='+ opt.folio +'" class="btn btn-primary"><i class="bi bi-pencil-fill"></i></a>' +'</td> ' +
                           '</tr>');
                   noInt++;
               });
