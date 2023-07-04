@@ -357,9 +357,10 @@
       </section>-->
       <!-- end cinta hashtag -->
 
-      <form action="buscaFolio/listado.php" method="post">
-                     <input class="form-control entry_folio" placeholder="Ej. LB15133" id="idFolio" name="idFolio" type="text" name="folio" required>
-                     <button type="submit" class="btn btn-lg btn-danger submit_folio">Buscar</button>
+      <form id="formBuscar">
+                     <input class="form-control entry_folio" placeholder="Ej. LB15133" id="idFolio" name="idFolio" type="text" name="idFolio" required>
+                     <!--<button type="submit" class="btn btn-lg btn-danger submit_folio">Buscar</button>-->
+                     <input type="submit" class="btn btn-lg btn-danger submit_folio" id="buscarFolio" value="Buscar">
                   </form>
       <!-- end design -->
 
@@ -381,3 +382,36 @@
       <!-- cuenta regresiva -->
    </body>
 </html>
+
+<script type="text/javascript">
+$("#buscarFolio").click(function() { //Guardar Datos
+      $("#formBuscar").submit(function(e){
+        e.preventDefault();
+      });
+      //console.log(32323);
+            
+            idFolio = $("#idFolio").val();
+
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "buscaFolio/backend/validaFolio.php?idFolio="+idFolio,
+               // data: { "idFolio": idFolio },
+                success: function (data) {
+                  console.log(data[0].num);
+                  if(data[0].num >= 1){
+                    window.location.href='buscaFolio/listado.php?idFolio='+ idFolio;
+                  }else{
+                     
+                     alert("Verifique el codigo " + idFolio + " ingresado");
+                  }
+                  
+                },
+                error: function (data) {
+                    console.log(data);
+                }
+            });
+                   
+                        //txt = "You pressed Cancel!";
+      });//Fin Guardar Datos
+</script>
