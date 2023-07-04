@@ -140,6 +140,8 @@ listPermissions = function(){
           {
             if(data.length ==0 ){
               alert('Favor validar el código: ' + idFolio + ' e intetar nuevamente');
+              window.location.href='https://www.misxvmajo.systemar.com.mx/index.php';
+
             }else{
               console.log(data);
                noInt =1;
