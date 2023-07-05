@@ -411,7 +411,15 @@ button {
      background-repeat: no-repeat;
      min-height: 180px;
 }
-
+#formBuscar{
+     position: relative;
+     background: url(../images/footer.png);
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 180px;
+     top: -10px;
+}
 .text-bg {
      text-align: left;
 }

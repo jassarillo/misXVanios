@@ -70,7 +70,7 @@
       <!-- End Banner jas-->
 
       <!-- Banner 2 -->
-      <div id="about" class="about">
+      <div id="about" class="about final">
          <div class="container">
             <div class="row">
                <div class="col-md-6">
@@ -356,12 +356,12 @@
       </a>
       </section>-->
       <!-- end cinta hashtag -->
-
-      <form id="formBuscar">
-                     <input class="form-control entry_folio" placeholder="Ej. LB15133" id="idFolio" name="idFolio" type="text"  required>
-                     <!--<button type="submit" class="btn btn-lg btn-danger submit_folio">Buscar</button>-->
-                     <input type="submit" class="btn btn-lg btn-danger submit_folio" id="buscarFolio" value="Buscar">
-                  </form>
+      
+         <form id="formBuscar">
+                  <input class="form-control entry_folio" placeholder="Ej. LB15133" id="idFolio" name="idFolio" type="text"  required>
+                  <!--<button type="submit" class="btn btn-lg btn-danger submit_folio">Buscar</button>-->
+                  <input type="submit" class="btn btn-lg btn-danger submit_folio" id="buscarFolio" value="Buscar">
+         </form>
       <!-- end design -->
 
     
@@ -422,4 +422,8 @@ $("#buscarFolio").click(function() { //Guardar Datos
                    
                         //txt = "You pressed Cancel!";
       });//Fin Guardar Datos
+
+
+
+ 
 </script>
